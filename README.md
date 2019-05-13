@@ -1,1 +1,1 @@
-# java-cloud-initialiser-jsp
+# java-springboot-cloud-initialiser-jsp
