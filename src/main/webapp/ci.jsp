@@ -14,19 +14,21 @@
 </head>
 <body>
 
-	<h2>Responsive Navigation Bar with Icons</h2>
-	<p>Try to resize the browser window to see the responsive effect.</p>
+    <div class="topnav" id="myTopnav">
+       <a href="#home" class="active">Home</a>
+       <a href="#news">News</a>
+       <a href="#contact">Contact</a>
+       <a href="#about">About</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+       </a>
+     </div>
 
-	<div class="navbar">
-		<a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> <a
-			href="#"><i class="fa fa-fw fa-search"></i> Search</a> <a href="#"><i
-			class="fa fa-fw fa-envelope"></i> Contact</a> <a href="#"><i
-			class="fa fa-fw fa-user"></i> Login</a>
-	</div>
-	
-	<div id="flip">Click to slide down panel</div>
-	<div id="panel">Hello world!</div>
-
-
+	 <div id="flip">Click to slide down panel</div>
+	 <div id="panel">Hello world!</div>
+     <div style="padding-left:16px">
+       <p>Resize the browser window to see how it works.</p>
+     </div>
+     
 </body>
 </html>
