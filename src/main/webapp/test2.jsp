@@ -29,8 +29,8 @@ body {
   outline: none;
   text-align: center;
   cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
+  padding: 7px 8px;
+  font-size: 13px;
 }
 
 .topnav a {
@@ -94,18 +94,31 @@ body {
 </head>
 <body>
 
+<script>
+function openMenuTab(menuTab,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("topnav");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(menuTab).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+</script>
+
+
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-		<button class="topnav" onclick="openMenuTab('Home', this, 'red')" id="defaultOpen">Home</button>
-		<button class="topnav" onclick="openMenuTab('Apps', this, 'green')">Apps</button>
-		<button class="topnav" onclick="openMenuTab('Utils', this, 'blue')">Utils</button>
-		<button class="topnav" onclick="openMenuTab('Databases', this, 'orange')">Databases</button>
-		<button class="topnav" onclick="openMenuTab('Contact', this, 'yellow')">Contact</button>
-		<button class="topnav" onclick="openMenuTab('About', this, 'pink')">About</button>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<button class="topnav" onclick="openMenuTab('Home', this, 'red')" id="defaultOpen" class="active">Home</button>
+	<button class="topnav" onclick="openMenuTab('Apps', this, 'green')">Apps</button>
+	<button class="topnav" onclick="openMenuTab('Utils', this, 'blue')">Utils</button>
+	<button class="topnav" onclick="openMenuTab('Databases', this, 'orange')">Databases</button>
+	<button class="topnav" onclick="openMenuTab('Contact', this, 'yellow')">Contact</button>
+	<button class="topnav" onclick="openMenuTab('About', this, 'pink')">About</button>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
