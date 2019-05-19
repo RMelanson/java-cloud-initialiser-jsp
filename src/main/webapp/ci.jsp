@@ -99,21 +99,6 @@ body {
 </head>
 <body>
 
-	<script>
-		function openMenuTab(menuTab, elmnt, color) {
-			var i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName("tabcontent");
-			for (i = 0; i < tabcontent.length; i++) {
-				tabcontent[i].style.display = "none";
-			}
-			tablinks = document.getElementsByClassName("topnav");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].style.backgroundColor = "";
-			}
-			document.getElementById(menuTab).style.display = "block";
-			elmnt.style.backgroundColor = color;
-		}
-	</script>
 
 	<div class="topnav" id="myTopnav">
 		<button class="topnav" onclick="openMenuTab('Home', this, 'red')"
@@ -165,18 +150,7 @@ body {
 		document.getElementById("defaultOpen").click();
 	</script>
 
-	<div id="panel">Hello world!</div>
-
-	<script>
-		function myFunction() {
-			var x = document.getElementById("myTopnav");
-			if (x.className === "topnav") {
-				x.className += " responsive";
-			} else {
-				x.className = "topnav";
-			}
-		}
-	</script>
+<script src="./js/ci/pageLoader.js"></script>
 
 </body>
 </html>
