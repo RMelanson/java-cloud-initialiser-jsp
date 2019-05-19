@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="css/slideToggle.css">
 <link rel="stylesheet" href="css/menu.css">
 <script src="./js/jQuery/3.4.1.js"></script>
-<script src="./js/ci/screenToggle.js"></script>
+<script src="./js/ci/screenToggleJUNK.js"></script>
 <script src="./js/ci/menu.js"></script>
 </head>
 

@@ -19,5 +19,4 @@ function openMenuTab(tabName, elmnt, color) {
 	}
 	document.getElementById(tabName).style.display = "block";
 	elmnt.style.backgroundColor = color;
-
 }
