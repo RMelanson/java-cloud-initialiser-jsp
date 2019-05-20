@@ -1,5 +1,7 @@
-alert("EXECUTING PAGE LOADER");
-
-$(document).ready(function(){
-   $('#Apps').load("./pages/apps.jsp");
-});
+function loadDivPage() {
+	var divId = $('#' + arguments[0]);
+	var page = "./pages/" + arguments[0].toLowerCase() + ".jsp";
+	$(document).ready(function() {
+		divId.load(page);
+	});
+}

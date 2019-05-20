@@ -1,1 +1,2 @@
-WELCOME TO HOME CHILD PAGE
+		<h1>Home</h1>
+		<p>WELCOME HOME</p>

@@ -12,7 +12,7 @@ function openMenuTab(menuTab, elmnt, color) {
 	elmnt.style.backgroundColor = color;
 }
 
-function myFunction() {
+function showVerticleNavMenu() {
 	var x = document.getElementById("myTopnav");
 	if (x.className === "topnav") {
 		x.className += " responsive";

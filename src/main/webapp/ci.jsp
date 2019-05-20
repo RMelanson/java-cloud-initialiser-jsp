@@ -6,97 +6,11 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="css/slideToggle.css">
 <link rel="stylesheet" href="css/menu.css">
 <script src="./js/jQuery/3.4.1.js"></script>
 <script src="./js/ci/menu.js"></script>
+<script src="./js/ci/pageLoader.js"></script>
 <!-- -->
-<style>
-body {
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-	overflow: hidden;
-	background-color: #333;
-}
-
-.topnav button {
-	background-color: #333;
-	color: #f2f2f2;
-	float: left;
-	border: none;
-	outline: none;
-	text-align: center;
-	cursor: pointer;
-	padding: 7px 8px;
-	font-size: 13px;
-}
-
-.topnav a {
-	color: #f2f2f2;
-	float: left;
-	display: block;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-}
-
-.topnav button:hover {
-	background-color: #ddd;
-	color: black;
-}
-
-.topnav a:hover {
-	background-color: #ddd;
-	color: black;
-}
-
-.active {
-	background-color: #4CAF50;
-	color: white;
-}
-
-.topnav .icon {
-	display: none;
-}
-
-@media screen and (max-width: 500px) {
-	.topnav a:not (:first-child ) {
-		display: none;
-	}
-	.topnav button:not (:first-child ) {
-		display: none;
-	}
-	.topnav a.icon {
-		float: right;
-		display: block;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	.topnav.responsive {
-		position: relative;
-	}
-	.topnav.responsive .icon {
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-	.topnav.responsive a {
-		float: none;
-		display: block;
-		text-align: left;
-	}
-	.topnav.responsive button {
-		float: none;
-		display: block;
-		text-align: left;
-	}
-}
-</style>
 </head>
 <body>
 	<div class="topnav" id="myTopnav">
@@ -105,61 +19,43 @@ body {
 		<button class="topnav" onclick="openMenuTab('Apps', this, 'green')">Apps</button>
 		<button class="topnav" onclick="openMenuTab('Utils', this, 'blue')">Utils</button>
 		<button class="topnav"
-			onclick="openMenuTab('Databases', this, 'orange')">Databases</button>
+			onclick="openMenuTab('Db', this, 'orange')">Db</button>
 		<button class="topnav"
-			onclick="openMenuTab('Contact', this, 'yellow')">Contact</button>
+			onclick="openMenuTab('Contact', this, 'grey')">Contact</button>
 		<button class="topnav" onclick="openMenuTab('About', this, 'pink')">About</button>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<a href="javascript:void(0);" class="icon" onclick="showVerticleNavMenu()">
 			<i class="fa fa-bars"></i>
 		</a>
 	</div>
 
 	<div id="Home" class="tabcontent">
-		<h1>Home</h1>
-		<p>Home Page</p>
+       <script> loadDivPage("Home"); </script>
 	</div>
 
 	<div id="Apps" class="tabcontent">
-		<h1>Apps</h1>
-		<p>Installation Applications</p>
+        <script> loadDivPage("Apps"); </script>
 	</div>
 
 	<div id="Utils" class="tabcontent">
-		<h1>Utils</h1>
-		<p>Installation Utilities</p>
+       <script> loadDivPage("Utils"); </script>
 	</div>
 
-	<div id="Databases" class="tabcontent">
-		<h1>Databases</h1>
-		<p>Installation Databases</p>
+	<div id="Db" class="tabcontent">
+      <script> loadDivPage("Db"); </script>
 	</div>
 
 	<div id="About" class="tabcontent">
-		<h1>About</h1>
-		<p>About Cloud Initialiser</p>
+      <script> loadDivPage("About"); </script>
 	</div>
 
 	<div id=Contact class="tabcontent">
-		<h1>Databases</h1>
-		<p>Contact Us</p>
+      <script> loadDivPage("Contact"); </script>
 	</div>
 
 	<script>
 		// Get the element with id="defaultOpen" and click on it
 		document.getElementById("defaultOpen").click();
 	</script>
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
-<script src="./js/ci/pageLoader.js"></script>
 
 </body>
 </html>
