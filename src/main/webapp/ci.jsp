@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Cloud Init</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -98,8 +99,6 @@ body {
 </style>
 </head>
 <body>
-
-
 	<div class="topnav" id="myTopnav">
 		<button class="topnav" onclick="openMenuTab('Home', this, 'red')"
 			id="defaultOpen" class="active">Home</button>
@@ -149,6 +148,16 @@ body {
 		// Get the element with id="defaultOpen" and click on it
 		document.getElementById("defaultOpen").click();
 	</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
 <script src="./js/ci/pageLoader.js"></script>
 
