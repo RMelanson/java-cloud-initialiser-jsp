@@ -2,9 +2,21 @@
 <!DOCTYPE html>
 <html>
 <body>
+<head>
+<title>Cloud Init</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<h1>Applications</h1>
-<p>WELCOME TO APPLICATIONS CHILD PAGE</p>
+<link rel="stylesheet" href="../css/menu.css">
+<link rel="stylesheet" href="./css/apps.css">
+<script src="./js/jQuery/3.4.1.js"></script>
+<script src="../js/ci/menu.js"></script>
+<script src="../js/ci/pageLoader.js"></script>
+<!-- -->
+</head>
+
+<p>WELCOME TO CLOUD INITIALISER APPLICATIONS</p>
 
 <p>Display some text when the checkbox is checked:</p>
 
