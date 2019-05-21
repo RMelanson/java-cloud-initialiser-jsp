@@ -22,18 +22,24 @@
 
 
 <p id="text" style="display:none">Checkbox is CHECKED!</p>
-<input type="checkbox" id="myCheck"  onclick="myFunction()">
-Checkbox: 
-<div id="test" class="tabcontent">
+<input type="checkbox" id="httpWeb" onclick="openAppsPage(this)">Web Apps<BR>
+<input type="checkbox" id="blog" onclick="openAppsPage()">Blogging<BR>
+<input type="checkbox" id="db" onclick="openAppsPage()">Databases<BR>
+<input type="checkbox" id="webServer" onclick="openAppsPage()">Web Servers<BR>
+<input type="checkbox" id="devOps" onclick="openAppsPage()">Dev Ops<BR>
+
+<div id="divApps" class="tabcontent">
    <input type="checkbox" name="vehicle1" value="Bike">I have a bike<br>
    <input type="checkbox" name="vehicle2" value="Car">I have a car<br>
    <input type="checkbox" name="vehicle3" value="Boat" checked>I have a boat<br>
 </div>
 
 <script>
-function myFunction() {
-  var checkBox = document.getElementById("myCheck");
-  var text = document.getElementById("test");
+function openAppsPage() {
+  id = arguments[0].id;
+  var checkBox = document.getElementById(id);
+  alert("Opening " + id);
+  var text = document.getElementById("divApps");
   if (checkBox.checked == true){
     text.style.display = "block";
   } else {
