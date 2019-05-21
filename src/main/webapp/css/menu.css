@@ -80,12 +80,30 @@ body {
 
 /************************ NEW FOR TEST *********************/
 
+p {
+	padding: 111; */
+	text-align: Center;
+}
+
+h1 {
+	text-align: Center;
+}
+
+
+/* Style the tab content */
+.pageDiv {
+	color: white;
+	display: none;
+	padding: 10px;
+	text-align: Left;
+}
+
 /* Style the tab content */
 .tabcontent {
 	color: white;
 	display: none;
-	padding: 50px;
-	text-align: center;
+	padding: 1px; */
+	text-align: Left;
 }
 
 #Home {

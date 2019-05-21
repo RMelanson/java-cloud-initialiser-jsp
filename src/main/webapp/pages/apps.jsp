@@ -15,35 +15,49 @@
 <script src="../js/ci/pageLoader.js"></script>
 <!-- -->
 </head>
+<Style>
+</Style>
 
-<p>WELCOME TO CLOUD INITIALISER APPLICATIONS</p>
+<p>WELCOME TO CLOUD INITIALISER APPLICATION INSTALLER</p>
 
-<p>Display some text when the checkbox is checked:</p>
+<input type="checkbox" id="httpWeb" onclick="openAppsPage(this)">HTTP Web<BR>
+   <p id="httpWebDiv" class="tabcontent">HTTP WEB INSTALLER </p>
+<input type="checkbox" id="blog" onclick="openAppsPage(this)">Blogging<BR>
 
 
-<p id="text" style="display:none">Checkbox is CHECKED!</p>
-<input type="checkbox" id="httpWeb" onclick="openAppsPage(this)">Web Apps<BR>
-<input type="checkbox" id="blog" onclick="openAppsPage()">Blogging<BR>
-<input type="checkbox" id="db" onclick="openAppsPage()">Databases<BR>
-<input type="checkbox" id="webServer" onclick="openAppsPage()">Web Servers<BR>
-<input type="checkbox" id="devOps" onclick="openAppsPage()">Dev Ops<BR>
-
-<div id="divApps" class="tabcontent">
-   <input type="checkbox" name="vehicle1" value="Bike">I have a bike<br>
-   <input type="checkbox" name="vehicle2" value="Car">I have a car<br>
-   <input type="checkbox" name="vehicle3" value="Boat" checked>I have a boat<br>
+ZZZZZZZZZZZZZZZZZZZ<BR>
+<div id="blogDiv" class="tabcontent">
+   BLOG INSTALLER
+   <input type="checkbox" id="wp" onclick="openAppsPage(this)">Wordpress<BR>
+   <div id="wpDiv" class="tabcontent">
+      <h1>WORDPRESS INSTALLER </h1>
+   </div>
 </div>
+<input type="checkbox" id="db" onclick="openAppsPage(this)">Databases<BR>
+<div id="dbDiv" class="tabcontent">
+   <h1>DATABASE INSTALLER </h1>
+</div>
+<input type="checkbox" id="webServer" onclick="openAppsPage(this)">Web Servers<BR>
+<div id="webServerDiv" class="tabcontent">
+   <h1>WEB SERVER INSTALLER </h1>
+</div>
+<input type="checkbox" id="devOps" onclick="openAppsPage(this)">Dev Ops<BR>
+
+<div id="devOpsDiv" class="tabcontent">
+   <h1>DEV OPS INSTALLER </h1>
+ </div>
 
 <script>
 function openAppsPage() {
   id = arguments[0].id;
+  page=id+"Div";
   var checkBox = document.getElementById(id);
-  alert("Opening " + id);
-  var text = document.getElementById("divApps");
+//  alert("Opening " + id+" Page = "+page);
+  var app = document.getElementById(page);
   if (checkBox.checked == true){
-    text.style.display = "block";
+	  app.style.display = "block";
   } else {
-     text.style.display = "none";
+	  app.style.display = "none";
   }
 }
 </script>
