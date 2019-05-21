@@ -10,7 +10,7 @@
 
 <link rel="stylesheet" href="../css/menu.css">
 <link rel="stylesheet" href="./css/apps.css">
-<script src="./js/jQuery/3.4.1.js"></script>
+<script src="../js/jQuery/3.4.1.js"></script>
 <script src="../js/ci/menu.js"></script>
 <script src="../js/ci/pageLoader.js"></script>
 <!-- -->
