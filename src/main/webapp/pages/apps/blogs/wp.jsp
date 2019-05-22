@@ -1,0 +1,2 @@
+<h1>WordPress</h1>
+<p>WELCOME TO WORDPRESS INSTALLER</p>

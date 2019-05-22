@@ -29,27 +29,27 @@
 	</div>
 
 	<div id="Home" class="tabcontent">
-       <script> loadDivPage("Home"); </script>
+       <script> loadDivPage("Home", "./pages"); </script>
 	</div>
 
 	<div id="Apps" class="tabcontent">
-        <script> loadDivPage("Apps"); </script>
+        <script> loadDivPage("Apps", "./pages"); </script>
 	</div>
 
 	<div id="Utils" class="tabcontent">
-       <script> loadDivPage("Utils"); </script>
+       <script> loadDivPage("Utils", "./pages"); </script>
 	</div>
 
 	<div id="Db" class="tabcontent">
-      <script> loadDivPage("Db"); </script>
+      <script> loadDivPage("Db", "./pages"); </script>
 	</div>
 
 	<div id="About" class="tabcontent">
-      <script> loadDivPage("About"); </script>
+      <script> loadDivPage("About", "./pages"); </script>
 	</div>
 
 	<div id=Contact class="tabcontent">
-      <script> loadDivPage("Contact"); </script>
+      <script> loadDivPage("Contact", "./pages"); </script>
 	</div>
 
 	<script>

@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html>
-<body>
+<body >
 <head>
 <title>Cloud Init</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,27 +15,29 @@
 <script src="../js/ci/pageLoader.js"></script>
 <!-- -->
 </head>
-<Style>
-</Style>
 
-<p>WELCOME TO CLOUD INITIALISER APPLICATION INSTALLER</p>
+<h1>WELCOME TO CLOUD INITIALISER APPLICATION INSTALLER</h1>
 
 <input type="checkbox" id="httpWeb" onclick="openAppsPage(this)">HTTP Web<BR>
    <p id="httpWebDiv" class="tabcontent">HTTP WEB INSTALLER </p>
 <input type="checkbox" id="blog" onclick="openAppsPage(this)">Blogging<BR>
-
-
-ZZZZZZZZZZZZZZZZZZZ<BR>
-<div id="blogDiv" class="tabcontent">
-   BLOG INSTALLER
+xxxxxxxxxxxxxxx
+<div id="Blog" class="zzzz">
+   <script> loadDivPage("Blog", "./blogs"); </script>
+</div>
+zzzzzzzzzzzzzzzzzz<BR>
+<div id="blogDiv" class="indent15">
    <input type="checkbox" id="wp" onclick="openAppsPage(this)">Wordpress<BR>
-   <div id="wpDiv" class="tabcontent">
-      <h1>WORDPRESS INSTALLER </h1>
+   <div id="wpDiv" class="indent">
+      <script> loadDivPage("wpDiv"); </script>
    </div>
 </div>
 <input type="checkbox" id="db" onclick="openAppsPage(this)">Databases<BR>
-<div id="dbDiv" class="tabcontent">
-   <h1>DATABASE INSTALLER </h1>
+<div id="dbDiv" class="indent15">
+   <input type="checkbox" id="wp" onclick="openAppsPage(this)">MySQL<BR>
+   <div id="dbDiv" class="tabcontent">
+      <h1>MySQL INSTALLER </h1>
+   </div>
 </div>
 <input type="checkbox" id="webServer" onclick="openAppsPage(this)">Web Servers<BR>
 <div id="webServerDiv" class="tabcontent">
