@@ -39,26 +39,7 @@
 
 	<p id="httpWebDiv" class="ciStyle">HTTP WEB INSTALLER</p>
 	
-	
-	<input type="checkbox" id="blog" onclick="checkBoxDivToggle(this)">Blogging<BR>
-	<div id="blogDiv" class="checkBoxes">
-		<input type="checkbox" id="wp" onclick="checkBoxDivToggle(this)">Wordpress<BR>
-		<div id="wpDiv" class="checkBoxes">
-			<input type="checkbox" id="admin" onclick="checkBoxDivToggle(this)">Admin<BR>
-			<h1>WP INSTALLER</h1>
-			<script>
-				$("#Utils").load("./apps/blogs/wp.jsp");
-			</script>
-		</div>
-	</div>
-
-	<input type="checkbox" id="webServer" onclick="checkBoxDivToggle(this)">Web
-	Servers<BR>
-	<div id="webServerDiv" class="ciStyle">
-		<h1>WEB SERVER INSTALLER</h1>
-	</div>
-	<input type="checkbox" id="devOps" onclick="checkBoxDivToggle(this)">Dev
-	Ops <BR>
+	<input type="checkbox" id="devOps" onclick="checkBoxDivToggle(this)">DevOps<BR>
 
 	<div id="devOpsDiv" class="ciStyle">
 		<h1>DEV OPS INSTALLER</h1>
