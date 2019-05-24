@@ -30,7 +30,7 @@
 	    <script> $("#databaseDiv").load("./apps/db.jsp"); </script>
 	</div>
 
-	<input type="checkbox" id="dev" onclick="checkBoxDivToggle(this)">Development<BR>
+	<input type="checkbox" id="dev" onclick="checkBoxDivToggle(this)">Database<BR>
 	<div id="devDiv" class="checkBoxes">
 	    <script> $("#devDiv").load("./apps/dev.jsp"); </script>
 	</div>
