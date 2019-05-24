@@ -1,16 +1,32 @@
 function openMenuTab(menuTab, elmnt, color) {
-	var i, tabcontent, tablinks;
-	tabcontent = document.getElementsByClassName("tabcontent");
-	for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
+
+	var i, ciStyle, tablinks;
+	ciStyle = document.getElementsByClassName("ciStyle");
+
+ 	for (i = 0; i < ciStyle.length; i++) {
+		ciStyle[i].style.display = "none";
 	}
 	tablinks = document.getElementsByClassName("topnav");
 	for (i = 0; i < tablinks.length; i++) {
 		tablinks[i].style.backgroundColor = "";
 	}
+
 	document.getElementById(menuTab).style.display = "block";
 	elmnt.style.backgroundColor = color;
 }
+
+function checkBoxDivToggle() {
+	  var checkBox = arguments[0];
+	  var cbId = checkBox.id;
+	  var divId = cbId+"Div";
+	//  alert("checkBox = " + checkBox+ " checkBox Id = " + cbId+ " divId = " + divId);
+	  divElement = document.getElementById(divId);
+	  if (checkBox.checked == true){
+		  divElement.style.display = "block";
+	  } else {
+		  divElement.style.display = "none";
+	  }
+	}
 
 function showVerticleNavMenu() {
 	var x = document.getElementById("myTopnav");

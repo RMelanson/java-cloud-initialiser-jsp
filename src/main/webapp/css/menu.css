@@ -92,26 +92,23 @@ h1 {
 
 /* Style the tab content */
 .pageDiv {
-	color: white;
-	display: none;
-	padding: 10px;
+	color: black;
+	padding-left: 16px;
 	text-align: Left;
 }
 
 /* Style the tab content */
-.indent15 {
-	color: white;
+.ciStyle, .apps, .checkBoxes {
+	color: black;
 	display: none;
-	padding-left: 10px;
+	padding: 1px;
 	text-align: Left;
 }
 
 /* Style the tab content */
-.tabcontent {
-	color: white;
-	display: none;
-	padding: 1px; */
-	text-align: Left;
+.checkBoxes {
+	font-size: 15px;
+	padding-left: 16px;
 }
 
 #Home {
@@ -126,7 +123,11 @@ h1 {
 	background-color: blue;
 }
 
-#Db {
+#dataBase {
+	background-color: orange;
+}
+
+#Test {
 	background-color: orange;
 }
 
