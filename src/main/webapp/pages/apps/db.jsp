@@ -1,5 +1,5 @@
 <input type="checkbox" id="mysql" onclick="checkBoxDivToggle(this)">MySQL<BR>
-div id="mysqlDiv" class="checkBoxes">
+<div id="mysqlDiv" class="checkBoxes">
 	<script>
 		$("#mysqlDiv").load("./apps/db/mysql.jsp");
 	</script>
@@ -10,6 +10,6 @@ div id="mysqlDiv" class="checkBoxes">
 
 <div id="oracleDiv" class="checkBoxes">
 	<script>
-		$("#progDiv").load("./apps/db/oracle.jsp");
+		$("#oracleDiv").load("./apps/db/oracle.jsp");
 	</script>
 </div>

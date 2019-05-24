@@ -1,2 +1,1 @@
-<h1>GIT</h1>
 <p>WELCOME TO THE GIT INSTALLER</p>
