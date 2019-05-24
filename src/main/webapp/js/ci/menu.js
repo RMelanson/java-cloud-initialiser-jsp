@@ -19,11 +19,13 @@ function checkBoxDivToggle() {
 	  var checkBox = arguments[0];
 	  var cbId = checkBox.id;
 	  var divId = cbId+"Div";
-	//  alert("checkBox = " + checkBox+ " checkBox Id = " + cbId+ " divId = " + divId);
+//	  alert("checkBox = " + checkBox+ " checkBox Id = " + cbId+ " divId = " + divId);
 	  divElement = document.getElementById(divId);
 	  if (checkBox.checked == true){
+//		  alert("SHOW " + divId)
 		  divElement.style.display = "block";
 	  } else {
+//		  alert("HIDE " + divId)
 		  divElement.style.display = "none";
 	  }
 	}
