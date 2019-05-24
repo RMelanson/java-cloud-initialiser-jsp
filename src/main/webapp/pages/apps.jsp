@@ -17,9 +17,6 @@
 <h1>WELCOME TO CLOUD INITIALISER APPLICATION INSTALLER</h1>
 <div id="apps" class="pageDiv">
 
-
-
-
 	<input type="checkbox" id="admin" onclick="checkBoxDivToggle(this)">Admin<BR>
 	<div id="adminDiv" class="checkBoxes">
 	    <script> $("#adminDiv").load("./apps/admin.jsp"); </script>
@@ -35,15 +32,14 @@
 	    <script> $("#devDiv").load("./apps/dev.jsp"); </script>
 	</div>
 
+	<input type="checkbox" id="web" onclick="checkBoxDivToggle(this)";>Web<BR>
+	<div id="webDiv" class="checkBoxes">
+	    <script> $("#webDiv").load("./apps/web.jsp"); </script>
+	</div>
 
-
-
-
-
-
-
-	<input type="checkbox" id="httpWeb" onclick="checkBoxDivToggle(this)";>HTTP	Web<BR>
 	<p id="httpWebDiv" class="ciStyle">HTTP WEB INSTALLER</p>
+	
+	
 	<input type="checkbox" id="blog" onclick="checkBoxDivToggle(this)">Blogging<BR>
 	<div id="blogDiv" class="checkBoxes">
 		<input type="checkbox" id="wp" onclick="checkBoxDivToggle(this)">Wordpress<BR>

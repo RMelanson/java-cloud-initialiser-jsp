@@ -1,2 +1,0 @@
-<h1>Blog</h1>
-<p>WELCOME TO BLOG INSTALLER</p>
