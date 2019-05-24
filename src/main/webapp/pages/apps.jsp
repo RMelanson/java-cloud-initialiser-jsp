@@ -32,14 +32,19 @@
 	    <script> $("#devDiv").load("./apps/dev.jsp"); </script>
 	</div>
 
-	<input type="checkbox" id="web" onclick="checkBoxDivToggle(this)">Web<BR>
-	<div id="webDiv" class="checkBoxes">
-	    <script> $("#webDiv").load("./apps/web.jsp"); </script>
-	</div>
-
 	<input type="checkbox" id="devOps" onclick="checkBoxDivToggle(this)">DevOps<BR>
 	<div id="devOpsDiv" class="checkBoxes">
 	    <script> $("#devOpsDiv").load("./apps/devOps.jsp"); </script>
+	</div>
+
+	<input type="checkbox" id="storage" onclick="checkBoxDivToggle(this)">Storage<BR>
+	<div id="storageDiv" class="checkBoxes">
+	    <script> $("#storageDiv").load("./apps/storage.jsp"); </script>
+	</div>
+
+	<input type="checkbox" id="web" onclick="checkBoxDivToggle(this)">Web<BR>
+	<div id="webDiv" class="checkBoxes">
+	    <script> $("#webDiv").load("./apps/web.jsp"); </script>
 	</div>
 </div>
 
