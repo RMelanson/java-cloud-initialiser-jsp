@@ -6,10 +6,9 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/menu2.css">
 <script src="./js/jQuery/3.4.1.js"></script>
 <script src="./js/ci/menu.js"></script>
-<script src="./js/ci/pageLoader.js"></script>
 <!-- -->
 </head>
 <body>
@@ -28,29 +27,29 @@
 		</a>
 	</div>
 
-	<div id="Home" class="tabcontent">
-       <script> loadDivPage("Home", "./pages"); </script>
+	<div id="Home" class="ciStyle">
+	    <script> $("#Home").load("./pages/home.jsp"); </script>
 	</div>
 
-	<div id="Apps" class="tabcontent">
-        <script> loadDivPage("Apps", "./pages"); </script>
-	</div>
+	<div id="Apps" class="ciStyle">
+	    <script> $("#Apps").load("./pages/apps.jsp"); </script>
+ 	</div>
 
-	<div id="Utils" class="tabcontent">
+	<div id="Utils" class="ciStyle">
 	    <script> $("#Utils").load("./pages/utils.jsp"); </script>
 	</div>
 
-	<div id="Db" class="tabcontent">
-      <script> loadDivPage("Db", "./pages"); </script>
+	<div id="Db" class="ciStyle">
+	    <script> $("#Db").load("./pages/db.jsp"); </script>
+ 	</div>
+
+	<div id="About" class="ciStyle">
+ 	    <script> $("#About").load("./pages/about.jsp"); </script>
 	</div>
 
-	<div id="About" class="tabcontent">
-      <script> loadDivPage("About", "./pages"); </script>
-	</div>
-
-	<div id=Contact class="tabcontent">
-      <script> loadDivPage("Contact", "./pages"); </script>
-	</div>
+	<div id=Contact class="ciStyle">
+ 	    <script> $("#Contact").load("./pages/contact.jsp"); </script>
+ 	</div>
 
 	<script>
 		// Get the element with id="defaultOpen" and click on it
