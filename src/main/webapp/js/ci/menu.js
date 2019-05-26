@@ -1,10 +1,10 @@
 function openMenuTab(menuTab, elmnt, color) {
 
-	var i, ciStyle, tablinks;
-	ciStyle = document.getElementsByClassName("ciStyle");
+	var i, pageDiv, tablinks;
+	pageDiv = document.getElementsByClassName("pageDiv");
 
- 	for (i = 0; i < ciStyle.length; i++) {
-		ciStyle[i].style.display = "none";
+ 	for (i = 0; i < pageDiv.length; i++) {
+ 		pageDiv[i].style.display = "none";
 	}
 	tablinks = document.getElementsByClassName("topnav");
 	for (i = 0; i < tablinks.length; i++) {

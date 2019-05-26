@@ -93,22 +93,22 @@ h1 {
 /* Style the tab content */
 .pageDiv {
 	color: black;
+	display: none;
+	padding: 10px;
 	padding-left: 16px;
 	text-align: Left;
 }
 
-/* Style the tab content */
-.ciStyle, .apps, .checkBoxes {
-	color: black;
-	display: none;
-	padding: 1px;
-	text-align: Left;
+/* ToDo Style apps */
+.apps {
 }
 
 /* Style the tab content */
 .checkBoxes {
-	font-size: 15px;
-	padding-left: 16px;
+	color: black;
+	display: none;
+	padding: 1px;
+	text-align: Left;
 }
 
 #Home {
@@ -124,10 +124,6 @@ h1 {
 }
 
 #dataBase {
-	background-color: orange;
-}
-
-#Test {
 	background-color: orange;
 }
 
