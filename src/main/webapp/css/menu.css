@@ -95,7 +95,6 @@ h1 {
 	color: black;
 	display: none;
 	padding: 10px;
-	padding-left: 16px;
 	text-align: Left;
 }
 
@@ -107,7 +106,7 @@ h1 {
 .checkBoxes {
 	color: black;
 	display: none;
-	padding: 1px;
+	padding-left: 16px;
 	text-align: Left;
 }
 

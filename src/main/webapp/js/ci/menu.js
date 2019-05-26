@@ -1,10 +1,11 @@
 function openMenuTab(menuTab, elmnt, color) {
+//    alert ("openMenuTab");
+	var i, pgDiv, tablinks;
+	pgDiv = document.getElementsByClassName("pageDiv");
 
-	var i, pageDiv, tablinks;
-	pageDiv = document.getElementsByClassName("pageDiv");
-
- 	for (i = 0; i < pageDiv.length; i++) {
- 		pageDiv[i].style.display = "none";
+ 	for (i = 0; i < pgDiv.length; i++) {
+// 		alert("Hiding pageDiv id " + pgDiv[i].id)
+ 		pgDiv[i].style.display = "none";
 	}
 	tablinks = document.getElementsByClassName("topnav");
 	for (i = 0; i < tablinks.length; i++) {
