@@ -44,7 +44,6 @@ function checkOpenWindow(winObj) {
 	if (winObj.obj == null) {
 		obj = window.open(winObj.url);
 		winObj.obj = obj;
-		alert("winObj.obj = " + winObj.obj);
 	}
 	else {
 		alert("Page " + page + " winObj.url");
