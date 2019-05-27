@@ -1,6 +1,10 @@
-<input type="checkbox" id="wp" onclick="checkBoxDivToggle(this)">wp<BR>
-<div id="wpDiv" class="checkBoxes">
-	<script>
-		$("#wpDiv").load("./apps/web/blogs/wp.jsp");
-	</script>
-</div>
+<script>
+   var wpWin = {
+       url: "./pages/apps/web/blogs/wp.jsp",
+       target: null,
+       features: "",
+       replace: false,
+       obj: null
+   };
+</script>
+<input type="checkbox" id="wp" onclick="checkOpenWindow(wpWin)">Wordpress<BR>

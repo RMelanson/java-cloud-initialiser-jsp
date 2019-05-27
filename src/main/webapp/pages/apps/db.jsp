@@ -1,15 +1,20 @@
-<input type="checkbox" id="mysql" onclick="checkBoxDivToggle(this)">MySQL<BR>
-<div id="mysqlDiv" class="checkBoxes">
-	<script>
-		$("#mysqlDiv").load("./pages/apps/db/mysql.jsp");
-	</script>
-</div>
+<script>
+   var mySqlWin = {
+       url: "./pages/apps/db/mysql.jsp",
+       target: null,
+       features: "",
+       replace: false,
+       obj: null
+   };
 
-<input type="checkbox" id="oracle" onclick="checkBoxDivToggle(this)">Oracle<BR>
+   var oracleWin = {
+	       url: "./pages/apps/db/oracle.jsp",
+	       target: null,
+	       features: "",
+	       replace: false,
+	       obj: null
+	   };
+</script>
 
-
-<div id="oracleDiv" class="checkBoxes">
-	<script>
-		$("#oracleDiv").load("./pages/apps/db/oracle.jsp");
-	</script>
-</div>
+<input type="checkbox" id="mysql" onclick="checkOpenWindow(MySqlWin)">MySql<BR>
+<input type="checkbox" id="oracle" onclick="checkOpenWindow(oracleWin)">Oracle<BR>

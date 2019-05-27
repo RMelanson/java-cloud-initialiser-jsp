@@ -1,13 +1,20 @@
-<input type="checkbox" id="http" onclick="checkBoxDivToggle(this)">HTTP<BR>
-<div id="httpDiv" class="checkBoxes">
-	<script>
-		$("#httpDiv").load("./apps/web/servers/http.jsp");
-	</script>
-</div>
+<script>
+var httpWin = {
+	       url: "./pages/apps/web/servers/http.jsp",
+	       target: null,
+	       features: "",
+	       replace: false,
+	       obj: null
+	   };
 
-<input type="checkbox" id="jboss" onclick="checkBoxDivToggle(this)">jBOSS<BR>
-<div id="jbossDiv" class="checkBoxes">
-	<script>
-		$("#jbossDiv").load("./apps/web/servers/jBoss.jsp");
-	</script>
-</div>
+var jbossWin = {
+		       url: "./pages/apps/web/servers/jBoss.jsp",
+		       target: null,
+		       features: "",
+		       replace: false,
+		       obj: null
+		   };
+</script>
+
+<input type="checkbox" id="http" onclick="checkOpenWindow(httpWin)">HTTP<BR>
+<input type="checkbox" id="jBoss" onclick="checkOpenWindow(jbossWin)">jBOSS<BR>

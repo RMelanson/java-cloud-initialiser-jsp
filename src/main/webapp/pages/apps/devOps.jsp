@@ -1,14 +1,21 @@
-<input type="checkbox" id="jenkins" onclick="checkBoxDivToggle(this)">jenkins<BR>
-<div id="jenkinsDiv" class="checkBoxes">
-	<script>
-		$("#jenkinsDiv").load("./pages/apps/devOps/jenkins.jsp");
-	</script>
-</div>
+<script>
+   var jenkinsWin = {
+       url: "./pages/apps/devOps/jenkins.jsp",
+       target: null,
+       features: "",
+       replace: false,
+       obj: null
+   };
 
-<input type="checkbox" id="docker" onclick="checkBoxDivToggle(this)">Docker<BR>
-<div id="dockerDiv" class="checkBoxes">
-	<script>
-		$("#dockerDiv").load("./pages/apps/devOps/docker.jsp");
-	</script>
-</div>
+   var dockerWin = {
+	       url: "./pages/apps/devOps/docker.jsp",
+	       target: null,
+	       features: "",
+	       replace: false,
+	       obj: null
+	   };
+   
+</script>
 
+<input type="checkbox" id="userAdmin" onclick="checkOpenWindow(jenkinsWin)">Jenkins<BR>
+<input type="checkbox" id="userAdmin" onclick="checkOpenWindow(dockerWin)">Docker<BR>

@@ -1,6 +1,12 @@
-<input type="checkbox" id="s3sf" onclick="checkBoxDivToggle(this)">S3SF<BR>
-<div id="s3sfDiv" class="checkBoxes">
-	<script>
-		$("#s3sfDiv").load("./pages/apps/storage/s3sf.jsp");
-	</script>
-</div>
+<script>
+   var s3sfWin = {
+       url: "./pages/apps/storage/s3sf.jsp",
+	       target: null,
+	       features: "",
+	       replace: false,
+	       obj: null
+	   };
+   
+</script>
+
+<input type="checkbox" id="userAdmin" onclick="checkOpenWindow(s3sfWin)">S3SF<BR>

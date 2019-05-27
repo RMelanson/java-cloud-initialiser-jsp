@@ -1,13 +1,20 @@
-<input type="checkbox" id="java" onclick="checkBoxDivToggle(this)">Java<BR>
-<div id="javaDiv" class="checkBoxes">
-	<script>
-		$("#javaDiv").load("./pages/apps/dev/languages/java.jsp");
-	</script>
-</div>
+<script>
+var javaWin = {
+	       url: "./pages/apps/dev/languages/java.jsp",
+	       target: null,
+	       features: "",
+	       replace: false,
+	       obj: null
+	   };
 
-<input type="checkbox" id="nodeJS" onclick="checkBoxDivToggle(this)">node.js<BR>
-<div id="nodeJSDiv" class="checkBoxes">
-	<script>
-		$("#nodeJSDiv").load("./pages/apps/dev/languages/nodeJS.jsp");
-	</script>
-</div>
+var nodejsWin = {
+	       url: "./pages/apps/dev/languages/nodeJS.jsp",
+	       target: null,
+	       features: "",
+	       replace: false,
+	       obj: null
+	   };
+</script>
+
+<input type="checkbox" id="java" onclick="checkOpenWindow(javaWin)">java<BR>
+<input type="checkbox" id="nodeJS" onclick="checkOpenWindow(nodejsWin)">node.js<BR>

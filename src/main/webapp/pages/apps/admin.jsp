@@ -6,13 +6,15 @@
        replace: false,
        obj: null
    };
+
+   var servicesAdminWin = {
+	       url: "./pages/apps/admin/servicesAdmin.jsp",
+	       target: null,
+	       features: "",
+	       replace: false,
+	       obj: null
+	   };
+   
 </script>
 <input type="checkbox" id="userAdmin" onclick="checkOpenWindow(userAdminWin)">User Admin<BR>
-
-<input type="checkbox" id="servicesAdmin" onclick="checkBoxDivToggle(this)">Admin Services<BR>
-
-<div id="servicesAdminDiv" class="checkBoxes">
-	<script>
-		$("#servicesAdminDiv").load("./pages/apps/admin/servicesAdmin.jsp");
-	</script>
-</div>
+<input type="checkbox" id="servicesAdmin" onclick="checkOpenWindow(servicesAdminWin)">Admin Services<BR>
