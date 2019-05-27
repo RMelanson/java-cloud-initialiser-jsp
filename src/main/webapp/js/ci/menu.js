@@ -31,10 +31,22 @@ function checkBoxDivToggle(checkBox) {
 	}
 
 function showVerticleNavMenu() {
-	var x = document.getElementById("myTopnav");
-	if (x.className === "topnav") {
-		x.className += " responsive";
-	} else {
-		x.className = "topnav";
+ 	var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+    	x.className += " responsive";
+    } else {
+    	x.className = "topnav";
+    }
+}
+
+function checkOpenWindow(winObj) {
+//	alert("window.obj = " + winObj.obj+ " window.url = " + winObj.url);
+	if (winObj.obj == null) {
+		obj = window.open(winObj.url);
+		winObj.obj = obj;
+		alert("winObj.obj = " + winObj.obj);
+	}
+	else {
+		alert("Page " + page + " winObj.url");
 	}
 }

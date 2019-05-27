@@ -1,10 +1,13 @@
-<input type="checkbox" id="userAdmin" onclick="checkBoxDivToggle(this)">User Admin<BR>
-
-<div id="userAdminDiv" class="checkBoxes">
-	<script>
-		$("#userAdminDiv").load("./pages/apps/admin/userAdmin.jsp");
-	</script>
-</div>
+<script>
+   var userAdminWin = {
+       url: "./pages/apps/admin/userAdmin.jsp",
+       target: null,
+       features: "",
+       replace: false,
+       obj: null
+   };
+</script>
+<input type="checkbox" id="userAdmin" onclick="checkOpenWindow(userAdminWin)">User Admin<BR>
 
 <input type="checkbox" id="servicesAdmin" onclick="checkBoxDivToggle(this)">Admin Services<BR>
 
