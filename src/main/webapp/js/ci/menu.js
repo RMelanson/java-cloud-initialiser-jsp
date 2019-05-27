@@ -16,8 +16,7 @@ function openMenuTab(menuTab, elmnt, color) {
 	elmnt.style.backgroundColor = color;
 }
 
-function checkBoxDivToggle() {
-	  var checkBox = arguments[0];
+function checkBoxDivToggle(checkBox) {
 	  var cbId = checkBox.id;
 	  var divId = cbId+"Div";
 //	  alert("checkBox = " + checkBox+ " checkBox Id = " + cbId+ " divId = " + divId);
