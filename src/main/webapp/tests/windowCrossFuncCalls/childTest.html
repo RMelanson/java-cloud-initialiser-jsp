@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChildTest</title>
+</head>
+<body>
+    <h2>Child Test Window</h2>
+
+    <button onclick="parentFunction()">CallParentFunction</button>
+     
+    <script language="Javascript" type="text/javascript">
+ 
+        function parentFunction() {
+            window.opener.parentFunction();
+        }
+
+        function callChildFunction() {
+            alert("doStuffOnPopup Child Test");
+        }
+
+        function childFunction()
+        {
+            alert(" Child Window Alert");
+        }
+
+    </script>
+</body>
+</html>

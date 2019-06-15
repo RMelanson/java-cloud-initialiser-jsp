@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>ParentTest</title>
+</head>
+<body>
+    <h2>Parent Window Test</h2>
+    <button onclick="openChildwindow()">Open Child Window</button>
+    <button onclick="closeChildwindow()">Close Child Window</button>
+    <BR>
+    <button onclick="checkBoxPage('userAdmin')">Check Button</button>
+    <button onclick="unCheckBoxPage('userAdmin')">UnCheck Button</button>
+    <BR><BR>
+    <input type="checkbox" id="userAdmin" onchange="checkOpenWindow(this)">User Admin<BR>
+    <button onclick="childFunction()">Call Child Function</button>
+ 
+    <script language="Javascript" type="text/javascript">
+    var userAdminWin = {
+       url: "ChildTest.html",
+       target: "Child Button Window",
+       features: "width=250, height=100",
+       replace: false,
+       obj: null
+    };
+
+    var childWindow = null;
+
+    function openChildwindow() {
+        alert("OPENING CHILD WINDOW");
+        childWindow = window.open("ChildTest.html", "Child Window", "width=250, height=100");
+        childWindow.focus();
+    }
+
+    function closeChildwindow() {
+         childWindow.focus();
+        childWindow.close();
+    }
+
+    function childFunction() {
+       childWindow.focus();
+       childWindow.childFunction();
+    }
+
+    function parentFunction()
+    {
+        alert(" Parent Window Alert");
+    }
+
+//		  alert("CHECK BOX PAGE")
+    function checkBoxPage(checkBoxId) {
+        alert("checkBoxId = "+checkBoxId);
+        var checkBox = document.getElementById("userAdmin");
+	    checkBox.checked = true;
+    }
+
+//		  alert("HIDE "CHECK BOX PAGE")
+    function unCheckBoxPage(checkBoxId) {
+        alert("checkBoxId = "+checkBoxId);
+        var checkBox = document.getElementById("userAdmin");
+	    checkBox.checked = false;
+   }
+
+   function checkOpenWindow(cb) {
+        cbId=cb.id;
+        cbChecked=cb.checked;
+        cbWin=getWin(cbId);
+        alert("cbId = " + cbId + " cbState = " + cbChecked + " getWin = " + cbWin)
+        if (cbWin != null) {
+           if (cbChecked) {
+                if (cbWin.obj == null) {
+                    alert("OPENING NEW WINDOW cbWin = " + cbWin);
+//                    obj2 = window.open(winObj.url);
+                    obj = window.open(winObj.url, winObj.target,winObj.features);
+//                    childWindow = window.open("ChildTest.html", "Child Window", "width=250, height=100");
+//		           winObj.obj = obj;
+                }
+                cbWin.obj.focus;
+           }
+           else {
+
+           }
+        }
+   }
+
+   function  getWin(winType) {
+        win = null;
+        switch(winType) {
+            case "userAdmin":
+                 win = userAdmin;
+                 break;
+            default:
+                 alert("ERROR unknown Window "+winType)
+                 win = null;
+         } 
+         return win;
+   }
+</script>
+</body>
+</html>

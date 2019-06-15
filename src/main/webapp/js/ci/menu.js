@@ -17,18 +17,36 @@ function openMenuTab(menuTab, elmnt, color) {
 }
 
 function checkBoxDivToggle(checkBox) {
-	  var cbId = checkBox.id;
-	  var divId = cbId+"Div";
+	var cbId = checkBox.id;
+	var divId = cbId+"Div";
 //	  alert("checkBox = " + checkBox+ " checkBox Id = " + cbId+ " divId = " + divId);
-	  divElement = document.getElementById(divId);
-	  if (checkBox.checked == true){
+	divElement = document.getElementById(divId);
+	if (checkBox.checked == true){
 //		  alert("SHOW " + divId)
-		  divElement.style.display = "block";
-	  } else {
+		divElement.style.display = "block";
+	} else {
 //		  alert("HIDE " + divId)
-		  divElement.style.display = "none";
-	  }
+		divElement.style.display = "none";
 	}
+}
+
+//		  alert("SHOW " + divId)
+function checkBoxDivOpen(checkBox) {
+	checkBox.checked = true;
+	var cbId = checkBox.id;
+	var divId = cbId+"Div";
+	divElement = document.getElementById(divId);
+		divElement.style.display = "block";
+}
+
+//		  alert("HIDE " + divId)
+function checkBoxDivClose(checkBox) {
+	checkBox.checked = false;
+	var cbId = checkBox.id;
+	var divId = cbId+"Div";
+	divElement = document.getElementById(divId);
+		divElement.style.display = "block";
+}
 
 function showVerticleNavMenu() {
  	var x = document.getElementById("myTopnav");
@@ -42,7 +60,7 @@ function showVerticleNavMenu() {
 function checkOpenWindow(winObj) {
 //	alert("window.obj = " + winObj.obj+ " window.url = " + winObj.url);
 	if (winObj.obj == null) {
-		obj = window.open(winObj.url);
+		obj = window.open(winObj.url, winObj.target,winObj.features);
 		winObj.obj = obj;
 	}
 	else {
