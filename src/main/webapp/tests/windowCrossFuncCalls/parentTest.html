@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>ParentTest</title>
 </head>
-<body onload="alert('ParentTest Loaded')">
+<body onload="">
     <h2>Parent Window Test</h2>
     <button onclick="openChildwindow()">Open Child Window</button>
     <button onclick="closeChildwindow()">Close Child Window</button>
@@ -76,16 +76,17 @@ person.firstName + " is " + person.age + " years old.";
         cbId=cb.id;
         cbChecked=cb.checked;
         cbWin=getWin(cbId);
-        if (cbWin != null) {
-           if (cbChecked) {
-                if (cbWin.obj == null) {
-                    alert("OPENING NEW WINDOW cbWin.url = " + cbWin.url+" cbWin.target = "+cbWin.target+" cbWin.features = "+cbWin.features);
+        alert("Check 1");
+        alert("Check 2 cbChecked = "+cbChecked);
+         if (cbWin != null) {
+            if (cbChecked) {
+                     alert("OPENING NEW WINDOW cbWin.url = " + cbWin.url+" cbWin.target = "+cbWin.target+" cbWin.features = "+cbWin.features);
                     cbWin.obj = window.open(cbWin.url, cbWin.target, cbWin.features);
-                }
+                cbWin.obj.focus();
            }
            else {
-                  cbWin.obj.close();
-           }
+            cbWin.obj.close();
+            }
         }
    }
 
@@ -96,7 +97,7 @@ person.firstName + " is " + person.age + " years old.";
                  win = userAdminWin;
                  break;
             default:
-                 alert("ERROR unknown Window "+winType)
+                 alert("ERROR unknown Window " + winType)
                  win = null;
          } 
          return win;
