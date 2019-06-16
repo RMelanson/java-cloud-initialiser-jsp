@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>ParentTest</title>
 </head>
-<body>
+<body onload="alert('ParentTest Loaded')">
     <h2>Parent Window Test</h2>
     <button onclick="openChildwindow()">Open Child Window</button>
     <button onclick="closeChildwindow()">Close Child Window</button>
@@ -17,19 +17,29 @@
     <button onclick="childFunction()">Call Child Function</button>
  
     <script language="Javascript" type="text/javascript">
-    var userAdminWin = {
-       url: "ChildTest.html",
-       target: "Child Button Window",
-       features: "width=250, height=100",
-       replace: false,
-       obj: null
-    };
+    var userAdminWin = newChildWindow("ChildTest.html", "Child Button Window", "width=250, height=100", false)
+
+function newChildWindow(url,target,features,replace) {
+    var win = new Object();
+    win.url = url;
+    win.target = target;
+    win.features = features;
+    win.replace = replace;
+    win.obj=null;
+    return win;
+}
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
 
     var childWindow = null;
 
     function openChildwindow() {
         alert("OPENING CHILD WINDOW");
-        childWindow = window.open("ChildTest.html", "Child Window", "width=250, height=100");
+        if (childWindow == null ){
+            alert("childWindow NULL Allocating");
+            childWindow = window.open("ChildTest.html", "Child Window", "width=250, height=100");
+        }
         childWindow.focus();
     }
 
@@ -66,20 +76,15 @@
         cbId=cb.id;
         cbChecked=cb.checked;
         cbWin=getWin(cbId);
-        alert("cbId = " + cbId + " cbState = " + cbChecked + " getWin = " + cbWin)
         if (cbWin != null) {
            if (cbChecked) {
                 if (cbWin.obj == null) {
-                    alert("OPENING NEW WINDOW cbWin = " + cbWin);
-//                    obj2 = window.open(winObj.url);
-                    obj = window.open(winObj.url, winObj.target,winObj.features);
-//                    childWindow = window.open("ChildTest.html", "Child Window", "width=250, height=100");
-//		           winObj.obj = obj;
+                    alert("OPENING NEW WINDOW cbWin.url = " + cbWin.url+" cbWin.target = "+cbWin.target+" cbWin.features = "+cbWin.features);
+                    cbWin.obj = window.open(cbWin.url, cbWin.target, cbWin.features);
                 }
-                cbWin.obj.focus;
            }
            else {
-
+                  cbWin.obj.close();
            }
         }
    }
@@ -88,7 +93,7 @@
         win = null;
         switch(winType) {
             case "userAdmin":
-                 win = userAdmin;
+                 win = userAdminWin;
                  break;
             default:
                  alert("ERROR unknown Window "+winType)
