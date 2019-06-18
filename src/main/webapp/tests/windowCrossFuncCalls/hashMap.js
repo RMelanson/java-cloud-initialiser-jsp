@@ -47,12 +47,13 @@ class HashMap {
     }
   
     get (key){
-      return this.containsKey(key) ? this._map[key] : null;
+      value=this.containsKey(key) ? this._map[key] : null;
+      return value;
     }
   
-    clear (key){
+    clearMap (){
       this.size = 0;
-      tis._map= {};
+      this._map= {};
     }
   
     getKeys (){

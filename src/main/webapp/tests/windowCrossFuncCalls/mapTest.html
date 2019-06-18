@@ -12,15 +12,14 @@
     Value: <input type="text" id="value" value="InputTest">
     <BR>
     <button onclick="put('KEY_1','T1')">Put</button>
-    <button onclick="printMap('KEY_4','T4')">Print Map</button>
     <button onclick="get()">Get</button>
     <button onclick="remove()">Remove</button>
+    <button onclick="clearMap()">Clear</button>
     <button onclick="printSize()">Print Size</button>
+    <button onclick="printMap('KEY_4','T4')">Print Map</button>
     <button onclick="printKeys()">Print Keys</button>
     <button onclick="printValues()">Print Values</button>
-    <button onclick="printMap()">Print Map</button>
-    <button onclick="clear()">Clear</button>
- 
+  
     <script>
         var hm = new HashMap();
 
@@ -58,7 +57,8 @@
             hm.printValues();
         }
 
-        function clear() {
+        function clearMap() {
+            hm.clearMap();
         }
     </script>
 </body>
