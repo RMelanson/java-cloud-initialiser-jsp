@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./hashMap.js"></script>
     <meta charset="UTF-8">
     <title>ParentTest</title>
 </head>
-<body onload="">
+<body onload="" onunload="cleanup()">
     <h2>Parent Window Test</h2>
     <button onclick="openChildwindow()">Open Child Window</button>
     <button onclick="closeChildwindow()">Close Child Window</button>
@@ -19,15 +20,7 @@
     <script language="Javascript" type="text/javascript">
     var userAdminWin = newChildWindow("ChildTest.html", "Child Button Window", "width=250, height=100", false)
 
-function newChildWindow(url,target,features,replace) {
-    var win = new Object();
-    win.url = url;
-    win.target = target;
-    win.features = features;
-    win.replace = replace;
-    win.obj=null;
-    return win;
-}
+
 
 document.getElementById("demo").innerHTML =
 person.firstName + " is " + person.age + " years old.";
@@ -38,7 +31,7 @@ person.firstName + " is " + person.age + " years old.";
         alert("OPENING CHILD WINDOW");
         if (childWindow == null ){
             alert("childWindow NULL Allocating");
-            childWindow = window.open("ChildTest.html", "Child Window", "width=250, height=100");
+            childWindow = newChildWindow("ChildTest.html", "Child Window", "width=250, height=100");
         }
         childWindow.focus();
     }
@@ -80,7 +73,7 @@ person.firstName + " is " + person.age + " years old.";
         alert("Check 2 cbChecked = "+cbChecked);
          if (cbWin != null) {
             if (cbChecked) {
-                     alert("OPENING NEW WINDOW cbWin.url = " + cbWin.url+" cbWin.target = "+cbWin.target+" cbWin.features = "+cbWin.features);
+                    alert("OPENING NEW WINDOW cbWin.url = " + cbWin.url+" cbWin.target = "+cbWin.target+" cbWin.features = "+cbWin.features);
                     cbWin.obj = window.open(cbWin.url, cbWin.target, cbWin.features);
                 cbWin.obj.focus();
            }
@@ -90,7 +83,30 @@ person.firstName + " is " + person.age + " years old.";
         }
    }
 
-   function  getWin(winType) {
+
+   function newChildWindow(name,target,features,replace) {
+       var win      = new Object();
+       win.name     = null;
+       win.url      = name+"html";
+       win.target   = target;
+       win.features = features;
+       win.replace  = replace;
+       win.obj=null;
+       return win;
+    }
+
+    function childWindow(name,target,features,replace) {
+       var win      = new Object();
+       win.name     = null;
+       win.url      = name+"html";
+       win.target   = target;
+       win.features = features;
+       win.replace  = replace;
+       win.obj=null;
+       return win;
+    }
+
+    function  getWin(winType) {
         win = null;
         switch(winType) {
             case "userAdmin":
@@ -101,6 +117,9 @@ person.firstName + " is " + person.age + " years old.";
                  win = null;
          } 
          return win;
+   }
+
+   function cleanup() {
    }
 </script>
 </body>

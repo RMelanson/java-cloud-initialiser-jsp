@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./hashMap.js"></script>
+    <meta charset="UTF-8">
+    <title>MAPTest</title>
+</head>
+<body onload="" onunload="cleanup()">
+    <h2>MAP Window Test</h2>
+    Key: <input type="text" id="key" value="InputTest">
+    Value: <input type="text" id="value" value="InputTest">
+    <BR>
+    <button onclick="put('KEY_1','T1')">Put</button>
+    <button onclick="printMap('KEY_4','T4')">Print Map</button>
+    <button onclick="get()">Get</button>
+    <button onclick="remove()">Remove</button>
+    <button onclick="size()">Size</button>
+    <button onclick="keys()">Keys</button>
+    <button onclick="values()">Values</button>
+    <button onclick="clear()">Clear</button>
+ 
+    <script>
+        var hm = new HashMap();
+
+        function put() {
+            key = document.getElementById("key").value;
+            value = document.getElementById("value").value;
+            hm.put(key, value);
+            hvalue = hm.get("KEY");
+        }
+    
+        function get() {
+            key = document.getElementById("key").value;
+            hm.get(key);
+            document.getElementById("value").value = value;
+        }
+
+        function remove() {
+            key = document.getElementById("key").value;
+            hm.remove(key);
+        }
+
+        function size() {
+        }
+
+        function getKeys() {
+        }
+
+        function getValues() {
+        }
+
+        function printKeys() {
+            hm.printKeys();
+        }
+
+        function printMap() {
+            hm.printMap();
+        }
+
+        function printValues() {
+            hm.printValues();
+        }
+
+        function clear() {
+        }
+    </script>
+</body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>ChildTest</title>
 </head>
-<body>
+<body onload="" onunload="cleanup()">
     <h2>Child Test Window</h2>
 
     <button onclick="parentFunction()">CallParentFunction</button>
@@ -24,6 +24,8 @@
             alert(" Child Window Alert");
         }
 
+        function cleanup() {
+        }
     </script>
 </body>
 </html>

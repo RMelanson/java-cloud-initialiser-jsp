@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>ParentTest</title>
 </head>
-<body>
+<body onload="" onunload="cleanup()">
     <h2>Window Test</h2>
 
     <button onclick="openWindowTest()">Open Window Test</button>
@@ -20,6 +20,8 @@
 
     function closeWindowTest() {
         testWindow.close();
+    }
+        function cleanup() {
     }
     </script>
 </body>
