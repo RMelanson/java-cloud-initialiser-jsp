@@ -75,23 +75,28 @@ class HashMap {
       return values;
     }
   
+    size () {
+      return this._size;
+    }
+
     printMap (){
-       var jsomMapStr=JSON.stringify(this._map);
-       alert("jsomMapStr = "+jsomMapStr);
+      this.printObj(this._map);
     }
 
     printKeys (){
-      var keys = this.getKeys();
-      var jsonKeys=JSON.stringify(keys);
-     alert("jsonKeys = "+jsonKeys);
+      this.printObj(this.getKeys());
     }
                     
     printValues (){
-      var values = this.getValues();
-      printArr(values);
+      this.printObj(this.getValues());
     }
 
-   size () {
-      return this._size;
+    printSize () {
+      this.printObj(this.size());
+    }
+
+    printObj(obj) {
+      var objStr=JSON.stringify(obj);
+      alert(objStr);
     }
 }

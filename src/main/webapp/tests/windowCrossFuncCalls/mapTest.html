@@ -15,9 +15,10 @@
     <button onclick="printMap('KEY_4','T4')">Print Map</button>
     <button onclick="get()">Get</button>
     <button onclick="remove()">Remove</button>
-    <button onclick="size()">Size</button>
-    <button onclick="keys()">Keys</button>
-    <button onclick="values()">Values</button>
+    <button onclick="printSize()">Print Size</button>
+    <button onclick="printKeys()">Print Keys</button>
+    <button onclick="printValues()">Print Values</button>
+    <button onclick="printMap()">Print Map</button>
     <button onclick="clear()">Clear</button>
  
     <script>
@@ -41,13 +42,8 @@
             hm.remove(key);
         }
 
-        function size() {
-        }
-
-        function getKeys() {
-        }
-
-        function getValues() {
+        function printSize() {
+            hm.printSize();
         }
 
         function printKeys() {
