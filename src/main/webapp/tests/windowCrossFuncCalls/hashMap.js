@@ -7,6 +7,7 @@ class HashMap {
    }
 
   test (val) {
+    junk = {};
     alert(val);
   }
 
@@ -32,7 +33,8 @@ class HashMap {
     }
   
     containsKey (key){
-      return this._map.hasOwnProperty(key);
+      keyFound = this._map.hasOwnProperty(key)
+      return keyFound;
     }
   
     containsValue (value){
@@ -47,7 +49,7 @@ class HashMap {
     }
   
     get (key){
-      value=this.containsKey(key) ? this._map[key] : null;
+      var value=this.containsKey(key) ? this._map[key] : null;
       return value;
     }
   

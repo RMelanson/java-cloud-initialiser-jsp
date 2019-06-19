@@ -14,36 +14,33 @@
     <button onclick="checkBoxPage('userAdmin')">Check Button</button>
     <button onclick="unCheckBoxPage('userAdmin')">UnCheck Button</button>
     <BR><BR>
-    <input type="checkbox" id="userAdmin" onchange="checkOpenWindow(this)">User Admin<BR>
+    <input type="checkbox" id="userAdminCB" onchange="checkOpenWindow(this)">User Admin<BR>
     <button onclick="childFunction()">Call Child Function</button>
  
     <script language="Javascript" type="text/javascript">
-    var userAdminWin = newChildWindow("ChildTest.html", "Child Button Window", "width=250, height=100", false)
+    var winMap = new HashMap();
 
+ //  var userAdminWin = childWindow("ChildTest.html", "Child Button Window", "width=250, height=100", false)
 
-
-document.getElementById("demo").innerHTML =
-person.firstName + " is " + person.age + " years old.";
-
-    var childWindow = null;
+    var newWin = null;
 
     function openChildwindow() {
         alert("OPENING CHILD WINDOW");
-        if (childWindow == null ){
+        if (newWin == null ){
             alert("childWindow NULL Allocating");
-            childWindow = newChildWindow("ChildTest.html", "Child Window", "width=250, height=100");
+            newWin = childWindow("ChildTest.html", "Child Window", "width=250, height=100");
         }
-        childWindow.focus();
+        newWin.focus();
     }
 
     function closeChildwindow() {
-         childWindow.focus();
-        childWindow.close();
+        newWin.focus();
+        newWin.close();
     }
 
     function childFunction() {
-       childWindow.focus();
-       childWindow.childFunction();
+        newWin.focus();
+        newWin.childFunction();
     }
 
     function parentFunction()
@@ -63,14 +60,12 @@ person.firstName + " is " + person.age + " years old.";
         alert("checkBoxId = "+checkBoxId);
         var checkBox = document.getElementById("userAdmin");
 	    checkBox.checked = false;
-   }
+    }
 
-   function checkOpenWindow(cb) {
-        cbId=cb.id;
-        cbChecked=cb.checked;
-        cbWin=getWin(cbId);
-        alert("Check 1");
-        alert("Check 2 cbChecked = "+cbChecked);
+    function checkOpenWindow(cb) {
+        var cbId = cb.id.substring(0, cb.id.length - "CB".length);
+        var cbChecked=cb.checked;
+        var cbWin=getWin(cbId);
          if (cbWin != null) {
             if (cbChecked) {
                     alert("OPENING NEW WINDOW cbWin.url = " + cbWin.url+" cbWin.target = "+cbWin.target+" cbWin.features = "+cbWin.features);
@@ -81,18 +76,15 @@ person.firstName + " is " + person.age + " years old.";
             cbWin.obj.close();
             }
         }
-   }
+    }
 
-
-   function newChildWindow(name,target,features,replace) {
-       var win      = new Object();
-       win.name     = null;
-       win.url      = name+"html";
-       win.target   = target;
-       win.features = features;
-       win.replace  = replace;
-       win.obj=null;
-       return win;
+    function  getWin(winType) {
+       win = winMap.get(winType);
+        if (win == null) {
+            win = childWindow(winType,winType,"width=250, height=100",true);
+            winmap.put(newWin,win);
+        }
+        return win;
     }
 
     function childWindow(name,target,features,replace) {
@@ -106,18 +98,6 @@ person.firstName + " is " + person.age + " years old.";
        return win;
     }
 
-    function  getWin(winType) {
-        win = null;
-        switch(winType) {
-            case "userAdmin":
-                 win = userAdminWin;
-                 break;
-            default:
-                 alert("ERROR unknown Window " + winType)
-                 win = null;
-         } 
-         return win;
-   }
 
    function cleanup() {
    }
