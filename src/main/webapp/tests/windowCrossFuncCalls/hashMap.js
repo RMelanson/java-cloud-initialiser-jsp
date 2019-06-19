@@ -33,7 +33,7 @@ class HashMap {
     }
   
     containsKey (key){
-      keyFound = this._map.hasOwnProperty(key)
+      var keyFound = this._map.hasOwnProperty(key)
       return keyFound;
     }
   

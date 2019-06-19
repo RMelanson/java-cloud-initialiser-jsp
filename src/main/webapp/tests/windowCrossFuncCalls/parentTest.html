@@ -79,7 +79,7 @@
     }
 
     function  getWin(winType) {
-       win = winMap.get(winType);
+        var win = winMap.get(winType);
         if (win == null) {
             win = childWindow(winType,winType,"width=250, height=100",true);
             winmap.put(newWin,win);
