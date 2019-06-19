@@ -78,11 +78,11 @@
         }
     }
 
-    function  getWin(winType) {
-        var win = winMap.get(winType);
+    function  getWin(winIdKey) {
+        var win = winMap.get(winIdKey);
         if (win == null) {
-            win = childWindow(winType,winType,"width=250, height=100",true);
-            winmap.put(newWin,win);
+            win = childWindow(winIdKey,winIdKey,"width=250, height=100",true);
+            winMap.put(winIdKey,win);
         }
         return win;
     }
@@ -90,7 +90,7 @@
     function childWindow(name,target,features,replace) {
        var win      = new Object();
        win.name     = null;
-       win.url      = name+"html";
+       win.url      = name+".html";
        win.target   = target;
        win.features = features;
        win.replace  = replace;
