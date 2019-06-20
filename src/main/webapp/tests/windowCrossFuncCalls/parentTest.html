@@ -8,77 +8,58 @@
 </head>
 <body onload="" onunload="cleanup()">
     <h2>Parent Window Test</h2>
-    <button onclick="openChildwindow()">Open Child Window</button>
-    <button onclick="closeChildwindow()">Close Child Window</button>
-    <BR>
-    <button onclick="checkBoxPage('userAdmin')">Check Button</button>
-    <button onclick="unCheckBoxPage('userAdmin')">UnCheck Button</button>
-    <BR><BR>
-    <input type="checkbox" id="userAdminCB" onchange="checkOpenWindow(this)">User Admin<BR>
-    <button onclick="childFunction()">Call Child Function</button>
+    <button onclick="openUserAdminWindow()">Open User Admin</button>
+    <button onclick="closeUserAdminWindow()">Close User Admin</button>
  
+    <BR><BR>
+    <input type="checkbox" id="userAdminCB" onchange="setCbWindowStatus(this)">User Admin<BR>
+  
     <script language="Javascript" type="text/javascript">
     var winMap = new HashMap();
+    var userAdmin = "userAdmin";
 
- //  var userAdminWin = childWindow("ChildTest.html", "Child Button Window", "width=250, height=100", false)
-
-    var newWin = null;
-
-    function openChildwindow() {
-        alert("OPENING CHILD WINDOW");
-        if (newWin == null ){
-            alert("childWindow NULL Allocating");
-            newWin = childWindow("ChildTest.html", "Child Window", "width=250, height=100");
-        }
-        newWin.focus();
+    function openUserAdminWindow() {
+//        alert("USER ADMIN WINDOW");
+        OpenWin(userAdmin);
     }
 
-    function closeChildwindow() {
-        newWin.focus();
-        newWin.close();
+    function closeUserAdminWindow() {
+//        alert("USER ADMIN WINDOW");
+        CloseWin(userAdmin);
     }
 
-    function childFunction() {
-        newWin.focus();
-        newWin.childFunction();
-    }
-
-    function parentFunction()
-    {
-        alert(" Parent Window Alert");
-    }
-
-//		  alert("CHECK BOX PAGE")
-    function checkBoxPage(checkBoxId) {
-        alert("checkBoxId = "+checkBoxId);
-        var checkBox = document.getElementById("userAdmin");
-	    checkBox.checked = true;
-    }
-
-//		  alert("HIDE "CHECK BOX PAGE")
-    function unCheckBoxPage(checkBoxId) {
-        alert("checkBoxId = "+checkBoxId);
-        var checkBox = document.getElementById("userAdmin");
-	    checkBox.checked = false;
-    }
-
-    function checkOpenWindow(cb) {
-        var cbId = cb.id.substring(0, cb.id.length - "CB".length);
+    function setCbWindowStatus(cb) {
+        var winId = cb.id.substring(0, cb.id.length - "CB".length);
         var cbChecked=cb.checked;
-        var cbWin=getWin(cbId);
-         if (cbWin != null) {
-            if (cbChecked) {
-                    alert("OPENING NEW WINDOW cbWin.url = " + cbWin.url+" cbWin.target = "+cbWin.target+" cbWin.features = "+cbWin.features);
-                    cbWin.obj = window.open(cbWin.url, cbWin.target, cbWin.features);
-                cbWin.obj.focus();
-           }
-           else {
-            cbWin.obj.close();
-            }
+        if (cbChecked) {
+            OpenWin(winId);
+        }
+        else {
+            CloseWin(winId)
         }
     }
 
-    function  getWin(winIdKey) {
+    function OpenWin(winId) {
+        var cbWin=getWin(winId);
+        cbWin.obj = window.open(cbWin.url, cbWin.target, cbWin.features);
+        cbWin.obj.focus();
+        setCheckBox(winId, true);
+    }
+
+    function CloseWin(winId) {
+        var cbWin=getWin(winId);
+        cbWin.obj.close();
+        cbWin.obj = null;
+        setCheckBox(winId, false);
+    }
+
+    function setCheckBox(checkBoxId, mode) {
+        alert("checkBoxId = "+checkBoxId + " mode ="+mode);
+        var checkBox = document.getElementById(userAdmin+"CB");
+	    checkBox.checked = mode;
+    }
+ 
+     function  getWin(winIdKey) {
         var win = winMap.get(winIdKey);
         if (win == null) {
             win = childWindow(winIdKey,winIdKey,"width=250, height=100",true);
@@ -94,10 +75,9 @@
        win.target   = target;
        win.features = features;
        win.replace  = replace;
-       win.obj=null;
+       win.obj      = null;
        return win;
     }
-
 
    function cleanup() {
    }

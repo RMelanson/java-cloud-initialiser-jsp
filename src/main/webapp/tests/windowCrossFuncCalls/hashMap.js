@@ -6,19 +6,12 @@ class HashMap {
     this._map = {};
    }
 
-  test (val) {
-    junk = {};
-    alert(val);
-  }
-
   put(key, value){
-//    alert("BEFORE size = "+this._size)
     if(!this.containsKey(key)){
        this._size++;
      }
      this._map[key] = value;
-//     alert("AFTER size = "+this._size)
-    }
+  }
 
   remove (key) {
       if(this.containsKey(key)){
@@ -33,7 +26,8 @@ class HashMap {
     }
   
     containsKey (key){
-      var keyFound = this._map.hasOwnProperty(key)
+      var mp = this._map;
+      var keyFound = mp.hasOwnProperty(key)
       return keyFound;
     }
   

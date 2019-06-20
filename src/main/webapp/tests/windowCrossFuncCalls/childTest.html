@@ -10,9 +10,11 @@
     <button onclick="parentFunction()">CallParentFunction</button>
      
     <script language="Javascript" type="text/javascript">
- 
+        var userAdmin = "userAdmin";
+
         function parentFunction() {
-            window.opener.parentFunction();
+            alert("Calling Parent");
+            window.opener.setCheckBox(userAdmin, false);
         }
 
         function callChildFunction() {

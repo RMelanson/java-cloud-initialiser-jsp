@@ -12,6 +12,11 @@
     <script language="Javascript" type="text/javascript">
  
         function parentFunction() {
+            alert("Calling Parent");
+            window.opener.setCheckBox(userAdmin, false);
+        }
+
+       function parentFunctionOLD() {
             window.opener.parentFunction();
         }
 
