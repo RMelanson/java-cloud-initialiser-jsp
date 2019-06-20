@@ -8,6 +8,8 @@
 </head>
 <body onload="" onunload="cleanup()">
     <h2>Parent Window Test</h2>
+    <button onclick="childFunction()">Notify Child</button>
+    <BR><BR>
     <button onclick="openUserAdminWindow()">Open User Admin</button>
     <button onclick="closeUserAdminWindow()">Close User Admin</button>
  
@@ -17,6 +19,8 @@
     <script language="Javascript" type="text/javascript">
     var winMap = new HashMap();
     var userAdmin = "userAdmin";
+
+    var newWin = null;
 
     function openUserAdminWindow() {
 //        alert("USER ADMIN WINDOW");
@@ -42,6 +46,7 @@
     function OpenWin(winId) {
         var cbWin=getWin(winId);
         cbWin.obj = window.open(cbWin.url, cbWin.target, cbWin.features);
+        newWin = cbWin.obj;
         cbWin.obj.focus();
         setCheckBox(winId, true);
     }
@@ -54,7 +59,7 @@
     }
 
     function setCheckBox(checkBoxId, mode) {
-        alert("checkBoxId = "+checkBoxId + " mode ="+mode);
+//        alert("checkBoxId = "+checkBoxId + " mode ="+mode);
         var checkBox = document.getElementById(userAdmin+"CB");
 	    checkBox.checked = mode;
     }
@@ -77,6 +82,15 @@
        win.replace  = replace;
        win.obj      = null;
        return win;
+    }
+
+    function childFunction() {
+        newWin.focus();
+        newWin.childFunction();
+    }
+
+    function parentFunction( val ) {
+        alert("Parent Function val = "+val)
     }
 
    function cleanup() {

@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <title>ChildTest</title>
 </head>
-<body onload="" onunload="cleanup()">
+<body onload="">
     <h2>Child Test Window</h2>
 
     <button onclick="parentFunction()">CallParentFunction</button>
      
     <script language="Javascript" type="text/javascript">
+
+        window.onbeforeunload = closingCode;
+        function closingCode(){
+           alert("AAAAAAAAAAAAAAAAAAAAAA");
+           return null;
+        }
+
+        var userAdmin = "userAdmin";
  
         function parentFunction() {
             alert("Calling Parent");
-            window.opener.setCheckBox(userAdmin, false);
         }
-
+ 
        function parentFunctionOLD() {
-            window.opener.parentFunction();
+            window.opener.parentFunction(userAdmin);
         }
 
         function callChildFunction() {
@@ -30,6 +37,8 @@
         }
 
         function cleanup() {
+            alert ("EXITING");
+            window.opener.setCheckBox(userAdmin, false);
         }
     </script>
 </body>
