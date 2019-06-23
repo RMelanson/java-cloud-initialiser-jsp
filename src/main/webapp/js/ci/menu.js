@@ -12,7 +12,8 @@ function openMenuTab(menuTab, elmnt, color) {
 		tablinks[i].style.backgroundColor = "";
 	}
 
-	document.getElementById(menuTab).style.display = "block";
+	var elementId = document.getElementById(menuTab);
+	elementId.style.display = "block";
 	elmnt.style.backgroundColor = color;
 }
 
@@ -31,7 +32,6 @@ function checkBoxDivToggle(checkBox) {
 }
 
 function checkBoxMenuToggle(checkBox) {
-	checkBoxDivToggle(checkBox);
 	var cbId = checkBox.id;
 	var divTabId = cbId+"Tab";
 //	  alert("checkBox = " + checkBox+ " checkBox Id = " + cbId+ " divTabId = " + divTabId);

@@ -15,13 +15,13 @@
 	       obj: null
 	   };
 </script>
-
 <input type="checkbox" id="mysql" onclick="checkBoxMenuToggle(this)">MySql<BR>
-<div id="mysqlDev" class="pageDiv">
-    <script> $("#mysql").load("./pages/mysql.jsp"); </script>
+<div id="mysqlDiv" class="pageDiv">
+    Hello Dog
+<!-- <script> $("#mysqlDiv").load("./pages/apps/db/mysql.jsp"); </script> -->
 </div>
-
+ 
 <input type="checkbox" id="oracle" onclick="checkBoxMenuToggle(this)">Oracle<BR>
-<div id="oracleDev" class="pageDiv">
-    <script> $("#oracle").load("./pages/oracle.jsp"); </script>
+<div id="oracleDiv" class="pageDiv">
+    <script> $("#oracleDiv").load("./pages/apps/db/oracle.jsp"); </script>
 </div>
