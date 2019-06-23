@@ -16,9 +16,19 @@
 		<button class="topnav" onclick="openMenuTab('Home', this, 'red')"
 			id="defaultOpen" class="active">Home</button>
 		<button class="topnav" onclick="openMenuTab('Apps', this, 'green')">Apps</button>
-		<button class="topnav" onclick="openMenuTab('Utils', this, 'blue')">Utils</button>
-		<button class="topnav" onclick="openMenuTab('dataBase', this, 'orange')">dB</button>
-		<button class="topnav" onclick="openMenuTab('About', this, 'pink')">About</button>
+		<div id=utilsTab class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('Utils', this, 'blue')">Utils</button>
+		</div>
+		<div id=dbTab class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('db', this, 'orange')">dB</button>
+		 </div>
+		 <div id=mysqlTab class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('mysql', this, 'orange')">mySQL</button>
+		 </div>
+		 <div id=oracleTab class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('oracle', this, 'orange')">Oracle</button>
+		 </div>
+		  <button class="topnav" onclick="openMenuTab('About', this, 'pink')">About</button>
 		<button class="topnav" onclick="openMenuTab('Contact', this, 'grey')">Contact</button>
 		<a href="javascript:void(0);" class="icon" onclick="showVerticleNavMenu()">
 			<i class="fa fa-bars"></i>

@@ -18,14 +18,29 @@ function openMenuTab(menuTab, elmnt, color) {
 
 function checkBoxDivToggle(checkBox) {
 	var cbId = checkBox.id;
-	var divId = cbId+"Div";
-//	  alert("checkBox = " + checkBox+ " checkBox Id = " + cbId+ " divId = " + divId);
-	divElement = document.getElementById(divId);
+	var divPageId = cbId+"Div";
+//	  alert("checkBox = " + checkBox+ " checkBox Id = " + cbId+ " divPageId = " + divPageId);
+	divElement = document.getElementById(divPageId);
 	if (checkBox.checked == true){
-//		  alert("SHOW " + divId)
+//		  alert("SHOW " + divPageId)
 		divElement.style.display = "block";
 	} else {
-//		  alert("HIDE " + divId)
+//		  alert("HIDE " + divPageId)
+		divElement.style.display = "none";
+	}
+}
+
+function checkBoxMenuToggle(checkBox) {
+	checkBoxDivToggle(checkBox);
+	var cbId = checkBox.id;
+	var divTabId = cbId+"Tab";
+//	  alert("checkBox = " + checkBox+ " checkBox Id = " + cbId+ " divTabId = " + divTabId);
+	divElement = document.getElementById(divTabId);
+	if (checkBox.checked == true){
+//		  alert("SHOW " + divTabId)
+		divElement.style.display = "block";
+	} else {
+//		  alert("HIDE " + divTabId)
 		divElement.style.display = "none";
 	}
 }
@@ -67,3 +82,4 @@ function checkOpenWindow(winObj) {
 		alert("Page " + page + " winObj.url");
 	}
 }
+

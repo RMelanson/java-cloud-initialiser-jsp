@@ -7,9 +7,9 @@
 	    <script> $("#adminDiv").load("./pages/apps/admin.jsp"); </script>
 	</div>
 
-	<input type="checkbox" id="database" onclick="checkBoxDivToggle(this)">Database<BR>
-	<div id="databaseDiv" class="checkBoxes">
-	    <script> $("#databaseDiv").load("./pages/apps/db.jsp"); </script>
+	<input type="checkbox" id="db" onclick="checkBoxDivToggle(this)">Database<BR>
+	<div id="dbDiv" class="checkBoxes">
+	    <script> $("#dbDiv").load("./pages/apps/db.jsp"); </script>
 	</div>
 
 	<input type="checkbox" id="dev" onclick="checkBoxDivToggle(this)">Development<BR>

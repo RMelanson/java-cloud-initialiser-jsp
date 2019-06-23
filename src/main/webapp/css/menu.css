@@ -76,19 +76,24 @@ body {
     display: block;
     text-align: left;
   }
+  
 }
 
 /************************ NEW FOR TEST *********************/
 
+.hiddenTab {
+    background-color: rgb(255, 255, 255);
+    display: none;
+  }
+
 p {
-	padding: 111; */
+	padding: 111;
 	text-align: Center;
 }
 
 h1 {
 	text-align: Center;
 }
-
 
 /* Style the tab content */
 .pageDiv {
