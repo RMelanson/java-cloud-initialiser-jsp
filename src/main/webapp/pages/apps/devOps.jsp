@@ -24,6 +24,10 @@
 	   };
 </script>
 
+<input type="checkbox" id="admin" onclick="checkBoxDivToggle(this)">admin<BR>
+	<div id="adminDiv" class="checkBoxes">
+	    <script> $("#adminDiv").load("./pages/apps/devOps/admin.jsp"); </script>
+	</div>
 <input type="checkbox" id="git_CB" onclick="checkOpenWindow(gitWin)">Git<BR>
 <input type="checkbox" id="jenkins_CB" onclick="checkOpenWindow(jenkinsWin)">Jenkins<BR>
 <input type="checkbox" id="docker_CB" onclick="checkOpenWindow(dockerWin)">Docker<BR>
