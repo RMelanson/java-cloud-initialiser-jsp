@@ -19,9 +19,21 @@
 		<div id="utilsTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('Utils', this, 'blue')">Utils</button>
 		</div>
-		<div id="dbTab" class="hiddenTab">
+		<div id="userAdminTab" class="hiddenTab">
+				<button class="topnav" onclick="openMenuTab('userAdmin', this, 'orange')">User Admin</button>
+	    </div>
+		<div id="servicesAdminTab" class="hiddenTab">
+				<button class="topnav" onclick="openMenuTab('servicesAdmin', this, 'orange')">Admin Services</button>
+	    </div>
+		<!-- <div id="dbTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('db', this, 'orange')">dB</button>
-		 </div>
+		</div> -->
+		<div id="toolsTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('tools', this, 'orange')">Tools</button>
+		</div>
+		<div id="langTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('lang', this, 'orange')">Languages/button>
+		</div>
 		 <div id = "mysqlTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('mysqlDiv', this, 'orange')">mySQL</button>
 		 </div>
@@ -39,26 +51,13 @@
 	    <script> $("#Home").load("./pages/home.jsp"); </script>
 	</div>
 
-	<div id="Apps" class="pageDiv">
-	    <script> $("#Apps").load("./pages/apps.jsp"); </script>
+	<div id="AppsAutoLoader" class="zzz">
+		<script> $("#AppsAutoLoader").load("./pages/apps.jsp"); </script>
 	</div>
 
 	<div id="Utils" class="pageDiv">
 	    <script> $("#Utils").load("./pages/utils.jsp"); </script>
 	</div>
-
-	<div id="db" class="pageDiv">
-		<script> $("#db").load("./pages/db.jsp"); </script>
-	</div>
-
-	<div id="mysqlDiv" class="pageDiv">
-			Hello Dog
-		    <script> $("#mysqlDiv").load("./pages/apps/db/mysql.jsp"); </script>
-	</div>
-
-	<div id="oracleDiv" class="pageDiv">
-			<script> $("#oracleDiv").load("./pages/apps/db/oracle.jsp"); </script>
-		</div>
 
 	<div id="About" class="pageDiv">
 	    <script> $("#About").load("./pages/about.jsp"); </script>

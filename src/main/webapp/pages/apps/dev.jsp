@@ -1,6 +1,6 @@
 <script>
-   var gitWin = {
-       url: "./pages/apps/dev/git.jsp",
+   var toolsWin = {
+       url: "./pages/apps/dev/tools.jsp",
        target: null,
        features: "",
        replace: false,
@@ -8,7 +8,7 @@
    };
 </script>
 
-<input type="checkbox" id="git" onclick="checkOpenWindow(gitWin)">Git<BR>
+<input type="checkbox" id="tools" onclick="checkOpenWindow(toolsWin)">Tools<BR>
 <input type="checkbox" id="prog" onclick="checkBoxDivToggle(this)">Programming<BR>
 <div id="progDiv" class="checkBoxes">
 	<script>

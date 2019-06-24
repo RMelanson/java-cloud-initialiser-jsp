@@ -1,10 +1,10 @@
 <script src="../js/jQuery/3.4.1.js"></script>
-<h1>WELCOME TO CLOUD INITIALISER APPLICATION INSTALLER</h1>
-<div id="apps" class="apps">
+<div id="Apps" class="pageDiv">
+	<h1>WELCOME TO CLOUD INITIALISER APPLICATION INSTALLER</h1>
 
-	<input type="checkbox" id="admin" onclick="checkBoxDivToggle(this)">Admin<BR>
-	<div id="adminDiv" class="checkBoxes">
-	    <script> $("#adminDiv").load("./pages/apps/admin.jsp"); </script>
+	<input type="checkbox" id="linuxAdm" onclick="checkBoxDivToggle(this)">Linux Admin<BR>
+	<div id="linuxAdmDiv" class="checkBoxes">
+	    <script> $("#adminDiv").load("./pages/apps/linuxAdm.jsp"); </script>
 	</div>
 
 	<input type="checkbox" id="db" onclick="checkBoxDivToggle(this)">Database<BR>
@@ -32,3 +32,15 @@
 	    <script> $("#webDiv").load("./pages/apps/web.jsp"); </script>
 	</div>
 </div>
+
+
+<!--  -->
+<div id="mysqlDiv" class="pageDiv">
+		MYSQL DIV
+		<script> $("#mysqlDiv").load("./pages/apps/db/mysql.jsp"); </script>
+	</div>
+		
+	<div id="oracleDiv" class="pageDiv">
+		<script> $("#oracleDiv").load("./pages/apps/db/oracle.jsp"); </script>
+	</div>
+<!--  -->

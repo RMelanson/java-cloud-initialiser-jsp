@@ -7,6 +7,7 @@ function openMenuTab(menuTab, elmnt, color) {
 // 		alert("Hiding pageDiv id " + pgDiv[i].id)
  		pgDiv[i].style.display = "none";
 	}
+	
 	tablinks = document.getElementsByClassName("topnav");
 	for (i = 0; i < tablinks.length; i++) {
 		tablinks[i].style.backgroundColor = "";
@@ -82,4 +83,3 @@ function checkOpenWindow(winObj) {
 		alert("Page " + page + " winObj.url");
 	}
 }
-
