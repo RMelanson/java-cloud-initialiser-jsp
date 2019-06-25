@@ -4,7 +4,7 @@
 
 	<input type="checkbox" id="applications" onclick="checkBoxDivToggle(this)">Applications<BR>
 		<div id="applicationsDiv" class="checkBoxes">
-			<script> $("#applicationsDiv").load("./pages/cloudInit/apps/apps.jsp"); </script>
+			<script> $("#applicationsDiv").load("./pages/cloudInit/apps.jsp"); </script>
 		</div>
 	
 	<input type="checkbox" id="dev" onclick="checkBoxDivToggle(this)">Development<BR>
