@@ -1,6 +1,6 @@
 <script>
    var s3sfWin = {
-       url: "./pages/apps/storage/s3sf.jsp",
+       url: "./pages/cloudInit/storage/s3sf.jsp",
 	       target: null,
 	       features: "",
 	       replace: false,

@@ -1,6 +1,6 @@
 <script>
    var wpWin = {
-       url: "./pages/apps/web/blogs/wp.jsp",
+       url: "./pages/cloudInit/web/blogs/wp.jsp",
        target: null,
        features: "",
        replace: false,

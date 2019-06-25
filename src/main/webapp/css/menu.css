@@ -103,10 +103,6 @@ h1 {
 	text-align: Left;
 }
 
-/* ToDo Style apps */
-.apps {
-}
-
 /* Style the tab content */
 .checkBoxes {
 	color: black;
@@ -119,7 +115,7 @@ h1 {
 	background-color: red;
 }
 
-#Apps {
+#CI {
 	background-color: green;
 }
 

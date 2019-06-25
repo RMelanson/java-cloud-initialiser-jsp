@@ -1,6 +1,6 @@
 <script>
 var javaWin = {
-	       url: "./pages/apps/dev/languages/java.jsp",
+	       url: "./pages/cloudInit/dev/languages/java.jsp",
 	       target: null,
 	       features: "",
 	       replace: false,
@@ -8,7 +8,7 @@ var javaWin = {
 	   };
 
 var nodejsWin = {
-	       url: "./pages/apps/dev/languages/nodeJS.jsp",
+	       url: "./pages/cloudInit/dev/languages/nodeJS.jsp",
 	       target: null,
 	       features: "",
 	       replace: false,

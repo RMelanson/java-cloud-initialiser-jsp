@@ -15,7 +15,7 @@
 	<div class="topnav" id="myTopnav">
 		<button class="topnav" onclick="openMenuTab('Home', this, 'red')"
 			id="homeTab" class="active">Home</button>
-		<button class="topnav" onclick="openMenuTab('Apps', this, 'green')">Apps</button>
+		<button class="topnav" onclick="openMenuTab('CI', this, 'green')">Cloud Initialiser</button>
 		<div id="utilsTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('Utils', this, 'blue')">Utils</button>
 		</div>
@@ -25,9 +25,6 @@
 		<div id="servicesAdminTab" class="hiddenTab">
 				<button class="topnav" onclick="openMenuTab('servicesAdmin', this, 'orange')">Admin Services</button>
 	    </div>
-		<!-- <div id="dbTab" class="hiddenTab">
-			<button class="topnav" onclick="openMenuTab('db', this, 'orange')">dB</button>
-		</div> -->
 		<div id="toolsTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('tools', this, 'orange')">Tools</button>
 		</div>
@@ -52,7 +49,7 @@
 	</div>
 
 	<div id="AppsAutoLoader" class="zzz">
-		<script> $("#AppsAutoLoader").load("./pages/apps.jsp"); </script>
+		<script> $("#AppsAutoLoader").load("./pages/cloudInit.jsp"); </script>
 	</div>
 
 	<div id="Utils" class="pageDiv">

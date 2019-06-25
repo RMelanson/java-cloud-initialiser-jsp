@@ -1,6 +1,6 @@
 <script>
    var userAdminWin = {
-       url: "./pages/apps/admin/userAdmin.jsp",
+       url: "./pages/cloudInit/admin/userAdmin.jsp",
        target: null,
        features: "",
        replace: false,
@@ -8,7 +8,7 @@
    };
 
    var servicesAdminWin = {
-	       url: "./pages/apps/admin/servicesAdmin.jsp",
+	       url: "./pages/cloudInit/admin/servicesAdmin.jsp",
 	       target: null,
 	       features: "",
 	       replace: false,

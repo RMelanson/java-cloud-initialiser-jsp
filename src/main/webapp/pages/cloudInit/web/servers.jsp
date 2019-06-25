@@ -1,6 +1,6 @@
 <script>
 var httpWin = {
-	       url: "./pages/apps/web/servers/http.jsp",
+	       url: "./pages/cloudInit/web/servers/http.jsp",
 	       target: null,
 	       features: "",
 	       replace: false,
@@ -8,7 +8,7 @@ var httpWin = {
 	   };
 
 var jbossWin = {
-		       url: "./pages/apps/web/servers/jBoss.jsp",
+		       url: "./pages/cloudInit/web/servers/jBoss.jsp",
 		       target: null,
 		       features: "",
 		       replace: false,
