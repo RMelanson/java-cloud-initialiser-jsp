@@ -2,34 +2,27 @@
 <div id="Apps" class="pageDiv">
 	<h1>WELCOME TO CLOUD INITIALISER</h1>
 
-	<!-- <input type="checkbox" id="db" onclick="checkBoxDivToggle(this)">Database<BR> -->
-<!--	<div id="dbDiv" class="checkBoxes">
-	    <script> $("#dbDiv").load("./pages/apps/db.jsp"); </script>
-	</div> -->
-
+	<input type="checkbox" id="applications" onclick="checkBoxDivToggle(this)">Applications<BR>
+		<div id="applicationsDiv" class="checkBoxes">
+			<script> $("#applicationsDiv").load("./pages/apps/apps/apps.jsp"); </script>
+		</div>
+	
 	<input type="checkbox" id="dev" onclick="checkBoxDivToggle(this)">Development<BR>
-	<div id="devDiv" class="checkBoxes">
-	    <script> $("#devDiv").load("./pages/apps/dev.jsp"); </script>
-	</div>
+		<div id="devDiv" class="checkBoxes">
+		    <script> $("#devDiv").load("./pages/apps/dev.jsp"); </script>
+		</div>
 
 	<input type="checkbox" id="devOps" onclick="checkBoxDivToggle(this)">DevOps<BR>
-	<div id="devOpsDiv" class="checkBoxes">
-	    <script> $("#devOpsDiv").load("./pages/apps/devOps.jsp"); </script>
-	</div>
+		<div id="devOpsDiv" class="checkBoxes">
+		    <script> $("#devOpsDiv").load("./pages/apps/devOps.jsp"); </script>
+		</div>
 
-	<input type="checkbox" id="storage" onclick="checkBoxDivToggle(this)">Storage<BR>
-	<div id="storageDiv" class="checkBoxes">
-	    <script> $("#storageDiv").load("./pages/apps/storage.jsp"); </script>
-	</div>
-
-	<input type="checkbox" id="web" onclick="checkBoxDivToggle(this)">Web<BR>
-	<div id="webDiv" class="checkBoxes">
-	    <script> $("#webDiv").load("./pages/apps/web.jsp"); </script>
-	</div>
+	<input type="checkbox" id="utilities" onclick="checkBoxDivToggle(this)">Utilities<BR>
+		<div id="utilitiesDiv" class="checkBoxes">
+			<script> $("#webDiv").load("./pages/apps/web.jsp"); </script>
+		</div>
 </div>
 
-
-<!--  -->
     <div id="mysqlDiv" class="pageDiv">
 		MYSQL DIV
 		<script> $("#mysqlDiv").load("./pages/apps/db/mysql.jsp"); </script>
