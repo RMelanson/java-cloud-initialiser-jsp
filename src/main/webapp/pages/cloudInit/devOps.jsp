@@ -1,6 +1,6 @@
 <script>
    var gitWin = {
-       url: "./pages/cloudInit/devOps/git.jsp",
+       url: "./pages/cloudInit/apps/devOps/git.jsp",
        target: null,
        features: "",
        replace: false,
@@ -8,7 +8,7 @@
    };
 
    var jenkinsWin = {
-       url: "./pages/cloudInit/devOps/jenkins.jsp",
+       url: "./pages/cloudInit/devOps/apps/jenkins.jsp",
        target: null,
        features: "",
        replace: false,
@@ -16,12 +16,20 @@
    };
 
    var dockerWin = {
-	       url: "./pages/cloudInit/devOps/docker.jsp",
+	       url: "./pages/cloudInit/devOps/apps/docker.jsp",
 	       target: null,
 	       features: "",
 	       replace: false,
 	       obj: null
 	   };
+
+    var storageWin = {
+	    url: "./pages/cloudInit/devOps/storage.jsp",
+	    target: null,
+	    features: "",
+	    replace: false,
+	    obj: null
+	};
 </script>
 
 <input type="checkbox" id="admin" onclick="checkBoxDivToggle(this)">Admin<BR>
@@ -31,9 +39,5 @@
 <input type="checkbox" id="git_CB" onclick="checkOpenWindow(gitWin)">Git<BR>
 <input type="checkbox" id="jenkins_CB" onclick="checkOpenWindow(jenkinsWin)">Jenkins<BR>
 <input type="checkbox" id="docker_CB" onclick="checkOpenWindow(dockerWin)">Docker<BR>
-<input type="checkbox" id="storage" onclick="checkBoxDivToggle(this)">Storage<BR>
-<div id="storageDiv" class="checkBoxes">
-   <script> $("#storageDiv").load("./pages/cloudInit/storage.jsp"); </script>
-</div>
-    
+<input type="checkbox" id="storage" onclick="checkOpenWindow(storageWin)">Storage<BR>
     
