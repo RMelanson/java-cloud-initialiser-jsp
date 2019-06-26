@@ -19,7 +19,7 @@
 
 	<input type="checkbox" id="utilities" onclick="checkBoxDivToggle(this)">Utilities<BR>
 		<div id="utilitiesDiv" class="checkBoxes">
-			<script> $("#webDiv").load("./pages/cloudInit/web.jsp"); </script>
+			<script> $("#utilitiesDiv").load("./pages/cloudInit/utils/utils.jsp"); </script>
 		</div>
 </div>
 
