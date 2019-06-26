@@ -8,13 +8,21 @@ var javaWin = {
 	   };
 
 var nodejsWin = {
-	       url: "./pages/cloudInit/dev/languages/nodeJS.jsp",
-	       target: null,
-	       features: "",
-	       replace: false,
-	       obj: null
-	   };
+	url: "./pages/cloudInit/dev/languages/nodeJS.jsp",
+	target: null,
+	features: "",
+	replace: false,
+	obj: null
+};
+var perlWin = {
+	url: "./pages/cloudInit/dev/languages/perl.jsp",
+	target: null,
+	features: "",
+	replace: false,
+	obj: null
+};
 </script>
 
 <input type="checkbox" id="java" onclick="checkOpenWindow(javaWin)">java<BR>
 <input type="checkbox" id="nodeJS" onclick="checkOpenWindow(nodejsWin)">node.js<BR>
+<input type="checkbox" id="perl" onclick="checkOpenWindow(perlWin)">perl.js<BR>

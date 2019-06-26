@@ -36,10 +36,6 @@
 			<script> $("#oracleDiv").load("./pages/cloudInit/db/oracle.jsp"); </script>
 	</div>
 
-	<div id="langDiv" class="langDiv">
-			<script> $("#langDiv").load("./pages/cloudInit/dev/lang.jsp"); </script>
-	</div>
-
 	<div id="adminDiv" class="pageDiv">
 			<script> $("#oracleDiv").load("./pages/cloudInit/db/oracle.jsp"); </script>
 	</div>
