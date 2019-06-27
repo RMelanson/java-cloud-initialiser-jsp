@@ -36,10 +36,13 @@
 			<button class="topnav" onclick="openMenuTab('oracleDiv', this, 'orange')">Oracle</button>
 		 </div>
 		<div id = "wpTab" class="hiddenTab">
-			<button class="topnav" onclick="openMenuTab('wpDiv', this, 'orange')">WordPress</button>
+			<button class="topnav" onclick="openMenuTab('wp', this, 'orange')">WordPress</button>
 		</div>
 		<div id="servicesAdminTab" class="hiddenTab">
 				<button class="topnav" onclick="openMenuTab('servicesAdmin', this, 'orange')">Admin Services</button>
+	    </div>
+		<div id="toolsTab" class="hiddenTab">
+				<button class="topnav" onclick="openMenuTab('tools', this, 'orange')">Tools</button>
 	    </div>
 		<div id="userAdminTab" class="hiddenTab">
 				<button class="topnav" onclick="openMenuTab('userAdmin', this, 'orange')">User Admin</button>
@@ -62,7 +65,7 @@
 		<script> $("#AppsAutoLoader").load("./pages/cloudInit.jsp"); </script>
 	</div>
 
--	<div id="About" class="pageDiv">
+	<div id="About" class="pageDiv">
 	    <script> $("#About").load("./pages/about.jsp"); </script>
 	</div>
 	
