@@ -35,12 +35,12 @@
 			<script> $("#oracleDiv").load("./pages/cloudInit/db/oracle.jsp"); </script>
 	</div>
 
-	<div id="adminDiv" class="pageDiv">
-			<script> $("#oracleDiv").load("./pages/cloudInit/db/oracle.jsp"); </script>
+	<div id="toolsDiv" class="pageDiv">
+			<script> $("#toolsDiv").load("./pages/cloudInit/dev/tools.jsp"); </script>
 	</div>
 
-	<div id="Utils" class="pageDiv">
-		<script> $("#Utils").load("./pages/utils.jsp"); </script>
+	<div id="UtilsDiv" class="pageDiv">
+		<script> $("#UtilsDiv").load("./pages/utils.jsp"); </script>
 	</div>
 	
 	<div id="wpDiv" class="pageDiv">
