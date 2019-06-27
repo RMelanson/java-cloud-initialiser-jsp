@@ -96,7 +96,7 @@ h1 {
 }
 
 /* Style the tab content */
-.pageDiv {
+.page_Div {
 	color: black;
 	display: none;
 	padding: 10px;
@@ -111,26 +111,26 @@ h1 {
 	text-align: Left;
 }
 
-#Home {
+#Home_Div {
 	background-color: red;
 }
 
-#CI {
+#CI_Div {
 	background-color: green;
 }
 
-#Utils {
+#Utils_Div {
 	background-color: blue;
 }
 
-#dataBase {
+#dataBase_Div {
 	background-color: orange;
 }
 
-#Contact {
+#Contact_Div {
 	background-color: grey;
 }
 
-#About {
+#About_Div {
 	background-color: pink;
 }

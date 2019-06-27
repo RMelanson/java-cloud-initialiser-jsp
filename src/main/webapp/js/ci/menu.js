@@ -1,10 +1,11 @@
-function openMenuTab(menuTab, elmnt, color) {
+function openMenuTab(id, elmnt, color) {
+	var menuTab = id + "_Div";
 //    alert ("openMenuTab");
 	var i, pgDiv, tablinks;
-	pgDiv = document.getElementsByClassName("pageDiv");
+	pgDiv = document.getElementsByClassName("page_Div");
 
  	for (i = 0; i < pgDiv.length; i++) {
-// 		alert("Hiding pageDiv id " + pgDiv[i].id)
+// 		alert("Hiding page_Div id " + pgDiv[i].id)
  		pgDiv[i].style.display = "none";
 	}
 	
@@ -20,7 +21,7 @@ function openMenuTab(menuTab, elmnt, color) {
 
 function checkBoxDivToggle(checkBox) {
 	var cbId = checkBox.id;
-	var divPageId = cbId+"Div";
+	var divPageId = cbId+"_Div";
 //	  alert("checkBox = " + checkBox+ " checkBox Id = " + cbId+ " divPageId = " + divPageId);
 	divElement = document.getElementById(divPageId);
 	if (checkBox.checked == true){
@@ -50,7 +51,7 @@ function checkBoxMenuToggle(checkBox) {
 function checkBoxDivOpen(checkBox) {
 	checkBox.checked = true;
 	var cbId = checkBox.id;
-	var divId = cbId+"Div";
+	var divId = cbId+"_Div";
 	divElement = document.getElementById(divId);
 		divElement.style.display = "block";
 }
@@ -59,7 +60,7 @@ function checkBoxDivOpen(checkBox) {
 function checkBoxDivClose(checkBox) {
 	checkBox.checked = false;
 	var cbId = checkBox.id;
-	var divId = cbId+"Div";
+	var divId = cbId+"_Div";
 	divElement = document.getElementById(divId);
 		divElement.style.display = "block";
 }

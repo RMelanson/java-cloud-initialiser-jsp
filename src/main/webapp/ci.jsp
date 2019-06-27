@@ -21,19 +21,19 @@
 			<button class="topnav" onclick="openMenuTab('tools', this, 'orange')">Tools</button>
 		</div>
 		<div id = "httpTab" class="hiddenTab">
-			<button class="topnav" onclick="openMenuTab('httpDiv', this, 'orange')">HTTP</button>
+			<button class="topnav" onclick="openMenuTab('http', this, 'orange')">HTTP</button>
 		</div>
 		<div id = "jBossTab" class="hiddenTab">
-			<button class="topnav" onclick="openMenuTab('jBossDiv', this, 'orange')">jBoss</button>
+			<button class="topnav" onclick="openMenuTab('jBoss', this, 'orange')">jBoss</button>
 		</div>
 		<div id = "langTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('lang', this, 'orange')">Languages/button>
 		</div>
 		 <div id = "mysqlTab" class="hiddenTab">
-			<button class="topnav" onclick="openMenuTab('mysqlDiv', this, 'orange')">mySQL</button>
+			<button class="topnav" onclick="openMenuTab('mysql', this, 'orange')">mySQL</button>
 		 </div>
 		 <div id = "oracleTab" class="hiddenTab">
-			<button class="topnav" onclick="openMenuTab('oracleDiv', this, 'orange')">Oracle</button>
+			<button class="topnav" onclick="openMenuTab('oracle', this, 'orange')">Oracle</button>
 		 </div>
 		<div id = "wpTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('wp', this, 'orange')">WordPress</button>
@@ -57,7 +57,7 @@
 		</a>
 	</div>
  
-	<div id="Home" class="pageDiv">
+	<div id="Home" class="page_Div">
 	    <script> $("#Home").load("./pages/home.jsp"); </script>
 	</div>
 
@@ -65,11 +65,11 @@
 		<script> $("#AppsAutoLoader").load("./pages/cloudInit.jsp"); </script>
 	</div>
 
-	<div id="About" class="pageDiv">
+	<div id="About" class="page_Div">
 	    <script> $("#About").load("./pages/about.jsp"); </script>
 	</div>
 	
-	<div id=Contact class="pageDiv">
+	<div id=Contact class="page_Div">
 	    <script> $("#Contact").load("./pages/contact.jsp"); </script>
 	</div>
 
