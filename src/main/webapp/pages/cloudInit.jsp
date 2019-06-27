@@ -24,7 +24,6 @@
 </div>
 
     <div id="mysqlDiv" class="pageDiv">
-		MYSQL DIV
 		<script> $("#mysqlDiv").load("./pages/cloudInit/db/mysql.jsp"); </script>
 	</div>
 		
@@ -39,4 +38,19 @@
 	<div id="adminDiv" class="pageDiv">
 			<script> $("#oracleDiv").load("./pages/cloudInit/db/oracle.jsp"); </script>
 	</div>
-	<!--  -->
+
+	<div id="Utils" class="pageDiv">
+		<script> $("#Utils").load("./pages/utils.jsp"); </script>
+	</div>
+	
+	<div id="wpDiv" class="pageDiv">
+		<script> $("#wpDiv").load("./pages/cloudInit/apps/web/blogs/wp.jsp"); </script>
+	</div>
+	
+<div id="httpDiv" class="pageDiv">
+		<script> $("#httpDiv").load("./pages/cloudInit/apps/web/servers/http.jsp"); </script>
+</div>
+
+<div id="jBossDiv" class="pageDiv">
+		<script> $("#jBossDiv").load("./pages/cloudInit/apps/web/servers/jBoss.jsp"); </script>
+</div>

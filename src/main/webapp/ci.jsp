@@ -14,21 +14,19 @@
 <body>
 	<div class="topnav" id="myTopnav">
 		<button class="topnav" onclick="openMenuTab('Home', this, 'red')"
-			id="homeTab" class="active">Home</button>
+			id = "homeTab" class="active">Home</button>
 		<button class="topnav" onclick="openMenuTab('CI', this, 'green')">Cloud Initialiser</button>
-		<div id="utilsTab" class="hiddenTab">
-			<button class="topnav" onclick="openMenuTab('Utils', this, 'blue')">Utils</button>
-		</div>
-		<div id="userAdminTab" class="hiddenTab">
-				<button class="topnav" onclick="openMenuTab('userAdmin', this, 'orange')">User Admin</button>
-	    </div>
-		<div id="servicesAdminTab" class="hiddenTab">
-				<button class="topnav" onclick="openMenuTab('servicesAdmin', this, 'orange')">Admin Services</button>
-	    </div>
-		<div id="toolsTab" class="hiddenTab">
+
+		<div id = "toolsTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('tools', this, 'orange')">Tools</button>
 		</div>
-		<div id="langTab" class="hiddenTab">
+		<div id = "httpTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('httpDiv', this, 'orange')">HTTP</button>
+		</div>
+		<div id = "jBossTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('jBossDiv', this, 'orange')">jBoss</button>
+		</div>
+		<div id = "langTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('lang', this, 'orange')">Languages/button>
 		</div>
 		 <div id = "mysqlTab" class="hiddenTab">
@@ -37,7 +35,19 @@
 		 <div id = "oracleTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('oracleDiv', this, 'orange')">Oracle</button>
 		 </div>
-		  <button class="topnav" onclick="openMenuTab('About', this, 'pink')">About</button>
+		<div id = "wpTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('wpDiv', this, 'orange')">WordPress</button>
+		</div>
+		<div id="servicesAdminTab" class="hiddenTab">
+				<button class="topnav" onclick="openMenuTab('servicesAdmin', this, 'orange')">Admin Services</button>
+	    </div>
+		<div id="userAdminTab" class="hiddenTab">
+				<button class="topnav" onclick="openMenuTab('userAdmin', this, 'orange')">User Admin</button>
+	    </div>
+		<div id="utilsTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('Utils', this, 'blue')">Utils</button>
+		</div>
+		<button class="topnav" onclick="openMenuTab('About', this, 'pink')">About</button>
 		<button class="topnav" onclick="openMenuTab('Contact', this, 'grey')">Contact</button>
 		<a href="javascript:void(0);" class="icon" onclick="showVerticleNavMenu()">
 			<i class="fa fa-bars"></i>
@@ -52,11 +62,7 @@
 		<script> $("#AppsAutoLoader").load("./pages/cloudInit.jsp"); </script>
 	</div>
 
-	<div id="Utils" class="pageDiv">
-	    <script> $("#Utils").load("./pages/utils.jsp"); </script>
-	</div>
-
-	<div id="About" class="pageDiv">
+-	<div id="About" class="pageDiv">
 	    <script> $("#About").load("./pages/about.jsp"); </script>
 	</div>
 	
