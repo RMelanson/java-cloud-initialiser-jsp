@@ -1,28 +1,3 @@
-<script>
-var javaWin = {
-	       url: "./pages/cloudInit/dev/languages/java.jsp",
-	       target: null,
-	       features: "",
-	       replace: false,
-	       obj: null
-	   };
-
-var nodejsWin = {
-	url: "./pages/cloudInit/dev/languages/nodeJS.jsp",
-	target: null,
-	features: "",
-	replace: false,
-	obj: null
-};
-var perlWin = {
-	url: "./pages/cloudInit/dev/languages/perl.jsp",
-	target: null,
-	features: "",
-	replace: false,
-	obj: null
-};
-</script>
-
-<input type="checkbox" id="java" onclick="checkOpenWindow(javaWin)">java<BR>
-<input type="checkbox" id="nodeJS" onclick="checkOpenWindow(nodejsWin)">node.js<BR>
-<input type="checkbox" id="perl" onclick="checkOpenWindow(perlWin)">perl.js<BR>
+<input type="checkbox" id="java" onclick="checkBoxMenuToggle(this)">Java<BR>
+<input type="checkbox" id="nodeJS" onclick="checkBoxMenuToggle(this)">Node.js<BR>   
+<input type="checkbox" id="perl" onclick="checkBoxMenuToggle(this)">Perl<BR>

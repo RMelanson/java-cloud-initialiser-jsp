@@ -23,6 +23,9 @@
 		<div id = "httpTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('http', this, 'orange')">HTTP</button>
 		</div>
+		<div id = "javaTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('java', this, 'orange')">Java</button>
+		</div>
 		<div id = "jBossTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('jBoss', this, 'orange')">jBoss</button>
 		</div>
@@ -31,10 +34,16 @@
 		</div>
 		 <div id = "mysqlTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('mysql', this, 'orange')">mySQL</button>
-		 </div>
+		</div>
+		<div id = "nodeJSTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('nodeJS', this, 'orange')">Node.JS</button>
+		</div>
 		 <div id = "oracleTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('oracle', this, 'orange')">Oracle</button>
 		 </div>
+		 <div id = "perlTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('perl', this, 'orange')">Perl</button>
+		</div>
 		<div id = "wpTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('wp', this, 'orange')">WordPress</button>
 		</div>
@@ -77,6 +86,5 @@
 		// Get the element with id="defaultOpen" and click on it
 		document.getElementById("defaultOpen").click();
 	</script>
-
 </body>
 </html>

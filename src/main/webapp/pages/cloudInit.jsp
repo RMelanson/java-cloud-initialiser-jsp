@@ -31,6 +31,10 @@
 		<script> $("#http_Div").load("./pages/cloudInit/apps/web/servers/http.jsp"); </script>
     </div>
 
+	<div id="java_Div" class="page_Div">
+		<script> $("#java_Div").load("./pages/cloudInit/dev/languages/java.jsp"); </script>
+	</div>
+	
     <div id="jBoss_Div" class="page_Div">
 		<script> $("#jBoss_Div").load("./pages/cloudInit/apps/web/servers/jBoss.jsp"); </script>
     </div>
@@ -39,8 +43,16 @@
 		<script> $("#mysql_Div").load("./pages/cloudInit/dev/db/mysql.jsp"); </script>
 	</div>
 		
+	<div id="nodeJS_Div" class="page_Div">
+		<script> $("#nodeJS_Div").load("./pages/cloudInit/dev/languages/nodeJS.jsp"); </script>
+	</div>
+
 	<div id="oracle_Div" class="page_Div">
 			<script> $("#oracle_Div").load("./pages/cloudInit/dev/db/oracle.jsp"); </script>
+	</div>
+
+	<div id="perl_Div" class="page_Div">
+		<script> $("#perl_Div").load("./pages/cloudInit/dev/languages/perl.jsp"); </script>
 	</div>
 
 	<div id="tools_Div" class="page_Div">
@@ -55,13 +67,12 @@
 	    <script> $("#oracle_Div").load("./pages/cloudInit/devOps/admin/userAdminAdmin/jsp"); </script>
 	</div>
 	
-
-	<div id="Utils_Div" class="page_Div">
-		<script> $("#Utils_Div").load("./pages/utils.jsp"); </script>
-	</div>
-	
 	<div id="wp_Div" class="page_Div">
 		<script> $("#wp_Div").load("./pages/cloudInit/apps/web/blogs/wp.jsp"); </script>
 	</div>
 	
- 
+	<div id="Utils_Div" class="page_Div">
+		<script> $("#Utils_Div").load("./pages/utils.jsp"); </script>
+	</div>
+	
+	
