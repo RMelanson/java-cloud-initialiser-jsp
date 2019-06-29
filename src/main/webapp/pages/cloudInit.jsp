@@ -30,9 +30,6 @@
 	<div id="docker_Div" class="page_Div">
 	    <script> $("#docker_Div").load("./pages/cloudInit/devOps/docker.jsp"); </script>
 	</div>
-	<div id="docker_Div" class="page_Div">
-	    <script> $("#docker_Div").load("./pages/cloudInit/devOps/docker.jsp"); </script>
-	</div>
 
 	<div id="git_Div" class="page_Div">
 		<script> $("#git_Div").load("./pages/cloudInit/devOps/git.jsp"); </script>
@@ -46,7 +43,11 @@
 		<script> $("#java_Div").load("./pages/cloudInit/dev/languages/java.jsp"); </script>
 	</div>
 	
-    <div id="jBoss_Div" class="page_Div">
+	<div id="jenkins_Div" class="page_Div">
+	    <script> $("#jenkins_Div").load("./pages/cloudInit/devOps/jenkins.jsp"); </script>
+	</div>
+
+	<div id="jBoss_Div" class="page_Div">
 		<script> $("#jBoss_Div").load("./pages/cloudInit/apps/web/servers/jBoss.jsp"); </script>
     </div>
 
