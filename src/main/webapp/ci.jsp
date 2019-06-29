@@ -17,14 +17,20 @@
 			id = "homeTab" class="active">Home</button>
 		<button class="topnav" onclick="openMenuTab('CI', this, 'green')">Cloud Initialiser</button>
 
-		<div id = "toolsTab" class="hiddenTab">
-			<button class="topnav" onclick="openMenuTab('tools', this, 'orange')">Tools</button>
+        <div id = "dockerTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('docker', this, 'orange')">Docker</button>
 		</div>
-		<div id = "httpTab" class="hiddenTab">
+        <div id = "gitTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('git', this, 'orange')">Git</button>
+		</div>
+        <div id = "httpTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('http', this, 'orange')">HTTP</button>
 		</div>
 		<div id = "javaTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('java', this, 'orange')">Java</button>
+		</div>
+        <div id = "jenkinsTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('jenkins', this, 'orange')">Jenkins</button>
 		</div>
 		<div id = "jBossTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('jBoss', this, 'orange')">jBoss</button>
@@ -32,7 +38,7 @@
 		<div id = "langTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('lang', this, 'orange')">Languages/button>
 		</div>
-		 <div id = "mysqlTab" class="hiddenTab">
+        <div id = "mysqlTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('mysql', this, 'orange')">mySQL</button>
 		</div>
 		<div id = "nodeJSTab" class="hiddenTab">
@@ -44,12 +50,12 @@
 		 <div id = "perlTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('perl', this, 'orange')">Perl</button>
 		</div>
+		<div id = "toolsTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('tools', this, 'orange')">Tools</button>
+		</div>
 		<div id = "wpTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('wp', this, 'orange')">WordPress</button>
 		</div>
-		<div id="servicesAdminTab" class="hiddenTab">
-				<button class="topnav" onclick="openMenuTab('servicesAdmin', this, 'orange')">Admin Services</button>
-	    </div>
 		<div id="toolsTab" class="hiddenTab">
 				<button class="topnav" onclick="openMenuTab('tools', this, 'orange')">Tools</button>
 	    </div>
