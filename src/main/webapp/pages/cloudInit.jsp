@@ -28,14 +28,14 @@
     </div>
 
 	<div id="docker_Div" class="page_Div">
-	    <script> $("#docker_Div").load("./pages/cloudInit/devOps/apps/docker.jsp"); </script>
+	    <script> $("#docker_Div").load("./pages/cloudInit/devOps/docker.jsp"); </script>
 	</div>
 	<div id="docker_Div" class="page_Div">
-	    <script> $("#docker_Div").load("./pages/cloudInit/devOps/apps/docker.jsp"); </script>
+	    <script> $("#docker_Div").load("./pages/cloudInit/devOps/docker.jsp"); </script>
 	</div>
 
 	<div id="git_Div" class="page_Div">
-		<script> $("#git_Div").load("./pages/cloudInit/apps/devOps/git.jsp"); </script>
+		<script> $("#git_Div").load("./pages/cloudInit/devOps/git.jsp"); </script>
 	</div>
 
 	<div id="http_Div" class="page_Div">
