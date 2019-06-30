@@ -75,6 +75,10 @@
 		<script> $("#perl_Div").load("./pages/cloudInit/dev/languages/perl.jsp"); </script>
 	</div>
 
+	<div id="s3fs_Div" class="page_Div">
+		<script> $("#s3fs_Div").load("./pages/cloudInit/devOps/storage/s3sf.jsp"); </script>
+	</div>
+
 	<div id="tools_Div" class="page_Div">
 			<script> $("#tools_Div").load("./pages/cloudInit/dev/tools.jsp"); </script>
 	</div>
@@ -90,7 +94,6 @@
 	<div id="wp_Div" class="page_Div">
 		<script> $("#wp_Div").load("./pages/cloudInit/apps/web/blogs/wp.jsp"); </script>
 	</div>
-	
 	<div id="utils_Div" class="page_Div">
-		<script> $("#utils_Div").load("./pages/utils.jsp"); </script>
+		<script> $("#utils_Div").load("./pages/cloudInit/utils.jsp"); </script>
 	</div>

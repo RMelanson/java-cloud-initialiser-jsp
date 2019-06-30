@@ -29,11 +29,11 @@
 		<div id = "javaTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('java', this, 'orange')">Java</button>
 		</div>
-        <div id = "jenkinsTab" class="hiddenTab">
-			<button class="topnav" onclick="openMenuTab('jenkins', this, 'orange')">Jenkins</button>
-		</div>
 		<div id = "jBossTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('jBoss', this, 'orange')">jBoss</button>
+		</div>
+        <div id = "jenkinsTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('jenkins', this, 'orange')">Jenkins</button>
 		</div>
 		<div id = "langTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('lang', this, 'orange')">Languages/button>
@@ -46,24 +46,24 @@
 		</div>
 		 <div id = "oracleTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('oracle', this, 'orange')">Oracle</button>
-		 </div>
-		 <div id = "perlTab" class="hiddenTab">
+		</div>
+		<div id = "perlTab" class="hiddenTab">
 			<button class="topnav" onclick="openMenuTab('perl', this, 'orange')">Perl</button>
 		</div>
+		<div id = "s3fsTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('s3fs', this, 'orange')">AWS S3FS</button>
+		</div>
 		<div id = "toolsTab" class="hiddenTab">
-			<button class="topnav" onclick="openMenuTab('tools', this, 'orange')">Tools</button>
-		</div>
-		<div id = "wpTab" class="hiddenTab">
-			<button class="topnav" onclick="openMenuTab('wp', this, 'orange')">WordPress</button>
-		</div>
-		<div id="toolsTab" class="hiddenTab">
 				<button class="topnav" onclick="openMenuTab('tools', this, 'orange')">Tools</button>
 	    </div>
 		<div id="userAdminTab" class="hiddenTab">
 				<button class="topnav" onclick="openMenuTab('userAdmin', this, 'orange')">User Admin</button>
 	    </div>
 		<div id="utilsTab" class="hiddenTab">
-			<button class="topnav" onclick="openMenuTab('Utils', this, 'blue')">Utils</button>
+			<button class="topnav" onclick="openMenuTab('utils', this, 'blue')">Utilities</button>
+		</div>
+		<div id = "wpTab" class="hiddenTab">
+			<button class="topnav" onclick="openMenuTab('wp', this, 'orange')">WordPress</button>
 		</div>
 		<button class="topnav" onclick="openMenuTab('About', this, 'pink')">About</button>
 		<button class="topnav" onclick="openMenuTab('Contact', this, 'grey')">Contact</button>

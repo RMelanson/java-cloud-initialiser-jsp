@@ -1,12 +1,1 @@
-<script>
-   var s3sfWin = {
-       url: "./pages/cloudInit/devOps/storage/s3sf.jsp",
-	       target: null,
-	       features: "",
-	       replace: false,
-	       obj: null
-	   };
-   
-</script>
-
-<input type="checkbox" id="userAdmin" onclick="checkOpenWindow(s3sfWin)">S3SF<BR>
+<input type="checkbox" id="s3fs" onclick="checkBoxMenuToggle(this)">AWS S3SF<BR>
