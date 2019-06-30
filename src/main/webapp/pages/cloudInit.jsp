@@ -19,7 +19,7 @@
 
 	<input type="checkbox" id="utilities" onclick="checkBoxDivToggle(this)">Utilities<BR>
 		<div id="utilities_Div" class="checkBoxes">
-			<script> $("#utilities_Div").load("./pages/cloudInit/utils/utils.jsp"); </script>
+			<script> $("#utilities_Div").load("./pages/cloudInit/utils.jsp"); </script>
 		</div>
 </div>
 
@@ -40,7 +40,7 @@
     </div>
 
 	<div id="java_Div" class="page_Div">
-		<script> $("#java_Div").load("./pages/cloudInit/dev/languages/java.jsp"); </script>
+		<script> $("#java_Div").load("./pages/cloudInit/dev/lang/java.jsp"); </script>
 	</div>
 	
 	<div id="jenkins_Div" class="page_Div">
@@ -64,7 +64,7 @@
 	</div>
 		
 	<div id="nodeJS_Div" class="page_Div">
-		<script> $("#nodeJS_Div").load("./pages/cloudInit/dev/languages/nodeJS.jsp"); </script>
+		<script> $("#nodeJS_Div").load("./pages/cloudInit/dev/lang/nodeJS.jsp"); </script>
 	</div>
 
 	<div id="oracle_Div" class="page_Div">
@@ -72,7 +72,7 @@
 	</div>
 
 	<div id="perl_Div" class="page_Div">
-		<script> $("#perl_Div").load("./pages/cloudInit/dev/languages/perl.jsp"); </script>
+		<script> $("#perl_Div").load("./pages/cloudInit/dev/lang/perl.jsp"); </script>
 	</div>
 
 	<div id="s3fs_Div" class="page_Div">
@@ -95,5 +95,5 @@
 		<script> $("#wp_Div").load("./pages/cloudInit/apps/web/blogs/wp.jsp"); </script>
 	</div>
 	<div id="utils_Div" class="page_Div">
-		<script> $("#utils_Div").load("./pages/cloudInit/utils.jsp"); </script>
+		<script> $("#utils_Div").load("./pages/cloudInit/utils/utils.jsp"); </script>
 	</div>
