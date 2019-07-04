@@ -38,6 +38,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                 <!--  <warName>[the name you want for your war file]</warName> -->
+                 <outputDirectory>./libs</outputDirectory>
+                 </configuration>
             </plugin>
         </plugins>
     </build>
